@@ -1,44 +1,37 @@
-# Portafolio-Project
+# Portafolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portafolio web personal desarrollado con **Vue 3** y **Vite**. Este proyecto muestra mis proyectos, habilidades y experiencia como desarrollador, con una interfaz moderna, responsiva y dinámica.
 
-## Recommended IDE Setup
+## 🌐 Sitio en vivo
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+El portafolio se encuentra publicado en **Azure Static Web Apps**:
 
-## Recommended Browser Setup
+👉 [https://white-field-0a1d0010f.7.azurestaticapps.net](https://white-field-0a1d0010f.7.azurestaticapps.net)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🛠️ Tecnologías utilizadas
 
-## Customize configuration
+| Tecnología       | Propósito                          |
+| ---------------- | ---------------------------------- |
+| **Vue 3**        | Framework frontend progresivo      |
+| **Vue Router**   | Enrutamiento SPA                   |
+| **Vite**         | Build tool y dev server            |
+| **Tailwind CSS** | Estilos utilitarios                |
+| **PostCSS**      | Procesamiento de CSS               |
+| **Autoprefixer** | Compatibilidad de CSS              |
+| **tsparticles**  | Animaciones de partículas          |
+| **simple-icons** | Iconos de tecnologías              |
+| **ESLint**       | Linting de código                  |
+| **Oxlint**       | Linting rápido                     |
+| **Prettier**     | Formateo de código                 |
+| **Azure Static Web Apps** | Hosting y despliegue continuo |
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
+## 🚀 Scripts disponibles
 
 ```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+npm install       # Instalar dependencias
+npm run dev       # Iniciar servidor de desarrollo
+npm run build     # Compilar para producción
+npm run preview   # Previsualizar build local
+npm run lint      # Ejecutar linters
+npm run format    # Formatear código con Prettier
 ```
