@@ -71,7 +71,7 @@ const content = reactive({
         title: 'Landing page Psicologia en SST',
         description: 'Diseño y desarrollo de una landing page profesional para una organización especializada en psicología laboral y seguridad y salud en el trabajo. El sitio presenta servicios enfocados en la gestión de riesgos psicosociales, bienestar emocional, prevención del estrés laboral y fortalecimiento del clima organizacional, ofreciendo una experiencia moderna, accesible y orientada a conectar empresas y colaboradores con soluciones de salud mental y bienestar laboral.',
         technologies: ['Nuxt.js', 'GraphQL', 'Strapi', 'Docker'],
-        demoLink: 'https://red-tree-009abb80f.7.azurestaticapps.net',
+        demoLink: 'https://thankful-tree-0700fe80f.7.azurestaticapps.net',
         repoLink: 'https://github.com/Enrike3596/Psicolog-a-SST.git'
       }
     ],
