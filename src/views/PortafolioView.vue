@@ -55,17 +55,17 @@ const content = reactive({
     projectsList: [
       {
         title: 'Landing Page "AntoJARTE"',
-        description: 'La página web sirve como una vitrina digital para "AntoJARTE". Presenta la historia de la marca, su menú de donas de autor, testimonios de clientes satisfechos y la ubicación de su tienda física. El objetivo es atraer a nuevos clientes y proporcionar información esencial sobre sus productos y servicios.',
+        description: '',
         technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS S3'],
         demoLink: 'https://victorious-forest-05388c00f.7.azurestaticapps.net',
-        repoLink: '#'
+        repoLink: 'https://github.com/Enrike3596/Landing--antoJARTE.git'
       },
       {
-        title: 'Sistema de Gestión de Tareas Móvil',
-        description: 'Aplicación móvil nativa para organizar y gestionar tareas personales y de equipo con funcionalidades de colaboración en tiempo real.',
+        title: 'Landing Page "Urbansys"',
+        description: 'Diseño y desarrollo de una landing page profesional para Urbansys, una solución tecnológica todo-en-uno que digitaliza y automatiza la gestión de comunidades residenciales. La plataforma integra procesos administrativos, control de acceso, gestión de residentes, comunicación interna, reservas de espacios comunes y seguimiento de activos, proporcionando una experiencia eficiente, segura y centralizada para administradores y residentes.',
         technologies: ['React Native', 'Express.js', 'PostgreSQL', 'Firebase'],
-        demoLink: '#',
-        repoLink: '#'
+        demoLink: 'https://lemon-desert-0138e820f.7.azurestaticapps.net',
+        repoLink: 'https://github.com/Enrike3596/Landing--Urbansys.git'
       },
       {
         title: 'Blog Personal con CMS',
