@@ -55,7 +55,7 @@ const content = reactive({
     projectsList: [
       {
         title: 'Landing Page "AntoJARTE"',
-        description: '',
+        description: 'La página web sirve como una vitrina digital para "AntoJARTE". Presenta la historia de la marca, su menú de donas de autor, testimonios de clientes satisfechos y la ubicación de su tienda física. El objetivo es atraer a nuevos clientes y proporcionar información esencial sobre sus productos y servicios.',
         technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS S3'],
         demoLink: 'https://victorious-forest-05388c00f.7.azurestaticapps.net',
         repoLink: 'https://github.com/Enrike3596/Landing--antoJARTE.git'
