@@ -54,10 +54,10 @@ const content = reactive({
     },
     projectsList: [
       {
-        title: 'Plataforma E-commerce',
-        description: 'Una plataforma completa de comercio electrónico con gestión de productos, carrito de compras y pasarela de pago, desarrollada con un enfoque en la escalabilidad y la seguridad.',
+        title: 'Landing Page "AntoJARTE"',
+        description: 'La página web sirve como una vitrina digital para "AntoJARTE". Presenta la historia de la marca, su menú de donas de autor, testimonios de clientes satisfechos y la ubicación de su tienda física. El objetivo es atraer a nuevos clientes y proporcionar información esencial sobre sus productos y servicios.',
         technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS S3'],
-        demoLink: '#',
+        demoLink: 'https://victorious-forest-05388c00f.7.azurestaticapps.net',
         repoLink: '#'
       },
       {
