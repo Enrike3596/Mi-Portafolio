@@ -959,13 +959,18 @@ const particlesOptions = computed(() => {
   width: 50px;
   height: 50px;
   border-radius: 20%;
-  color: #fff;
-  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06));
+  color: #475569;
+  background: linear-gradient(135deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
   transition: all 0.35s ease-in-out;
-  box-shadow: inset 0 1px 2px rgba(255,255,255,0.45), inset 0 -2px 6px rgba(0,0,0,0.18), 0 6px 16px rgba(0,0,0,0.22);
+  box-shadow: inset 0 -1px 3px rgba(0,0,0,0.08), 0 6px 16px rgba(0,0,0,0.08);
   text-decoration: none;
+}
+.dark .icon-content a {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06));
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.45), inset 0 -2px 6px rgba(0,0,0,0.18), 0 6px 16px rgba(0,0,0,0.22);
 }
 .icon-content a[data-social="whatsapp"] {
   border: 1px solid rgba(37, 211, 102, 0.6);
@@ -986,11 +991,14 @@ const particlesOptions = computed(() => {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 70%);
+  background: linear-gradient(120deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.12) 50%, rgba(0,0,0,0) 70%);
   transform: rotate(25deg) translateX(-100%);
   transition: transform 0.8s ease;
   z-index: 1;
   pointer-events: none;
+}
+.dark .icon-content a::before {
+  background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 70%);
 }
 .icon-content a:hover::before {
   transform: rotate(25deg) translateX(100%);
