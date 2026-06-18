@@ -91,7 +91,6 @@ const content = reactive({
     contactLocationLabel: 'Ubicación',
     contactFormSubject: 'Asunto',
     contactInfoTitle: 'Información de Contacto',
-    contactSocialTitle: 'Redes Sociales',
     footerText: '© 2024 Luis Enrique Cuellar Velasquez. Todos los derechos reservados.'
   },
   en: {
@@ -657,12 +656,6 @@ const particlesOptions = computed(() => {
 
               <!-- Social -->
               <div class="contact-card">
-                <h3 class="text-xl font-semibold mb-5 flex items-center gap-2">
-                  <svg class="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                  </svg>
-                  {{ content[currentLanguage].contactSocialTitle }}
-                </h3>
                 <ul class="social-list">
                   <li class="icon-content">
                     <a data-social="whatsapp" aria-label="WhatsApp" href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">
