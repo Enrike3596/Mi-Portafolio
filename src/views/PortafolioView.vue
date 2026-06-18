@@ -56,21 +56,21 @@ const content = reactive({
       {
         title: 'Landing Page "AntoJARTE"',
         description: 'La página web sirve como una vitrina digital para "AntoJARTE". Presenta la historia de la marca, su menú de donas de autor, testimonios de clientes satisfechos y la ubicación de su tienda física. El objetivo es atraer a nuevos clientes y proporcionar información esencial sobre sus productos y servicios.',
-        technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS S3'],
+        technologies: ['HTML5', 'Tailwind CSS', 'JavaScript'],
         demoLink: 'https://victorious-forest-05388c00f.7.azurestaticapps.net',
         repoLink: 'https://github.com/Enrike3596/Landing--antoJARTE.git'
       },
       {
         title: 'Landing Page "Urbansys"',
         description: 'Diseño y desarrollo de una landing page profesional para Urbansys, una solución tecnológica todo-en-uno que digitaliza y automatiza la gestión de comunidades residenciales. La plataforma integra procesos administrativos, control de acceso, gestión de residentes, comunicación interna, reservas de espacios comunes y seguimiento de activos, proporcionando una experiencia eficiente, segura y centralizada para administradores y residentes.',
-        technologies: ['React Native', 'Express.js', 'PostgreSQL', 'Firebase'],
+        technologies: ['Vue 3', 'TailwindCSS 3', 'Vite 7', 'ESLint + Oxlint'],
         demoLink: 'https://lemon-desert-0138e820f.7.azurestaticapps.net',
         repoLink: 'https://github.com/Enrike3596/Landing--Urbansys.git'
       },
       {
         title: 'Landing Page para Clínica Odontológica',
         description: 'Desarrollo de una landing page moderna y responsiva para una clínica odontológica, diseñada para presentar servicios, especialidades y el equipo médico de manera profesional. La solución facilita la reserva de citas mediante formularios de contacto, mejora la experiencia de los usuarios y fortalece la presencia digital de la clínica, contribuyendo a la captación de nuevos pacientes.',
-        technologies: ['Nuxt.js', 'GraphQL', 'Strapi', 'Docker'],
+        technologies: ['Vue 3', 'Vite', 'Bootstrap 5', 'WOW.js + Animate.css'],
         demoLink: 'https://lemon-pond-0de0b710f.7.azurestaticapps.net',
         repoLink: 'https://github.com/Enrike3596/Landing--Odontologia.git'
       }
