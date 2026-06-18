@@ -733,11 +733,13 @@ const particlesOptions = computed(() => {
                       required
                     ></textarea>
                   </div>
-                  <button type="submit" class="w-full btn-warm py-3.5 rounded-xl font-bold text-white shadow-lg shadow-orange-500/20 hover:shadow-xl hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2 group">
-                    <span>{{ content[currentLanguage].contactFormSubmit }}</span>
-                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                    </svg>
+                  <button type="submit" class="btn-submit">
+                    <span class="btn-submit-text">{{ content[currentLanguage].contactFormSubmit }}</span>
+                    <span class="btn-submit-icon">
+                      <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="20px" aria-hidden="true">
+                        <path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" fill="currentColor"></path>
+                      </svg>
+                    </span>
                   </button>
                 </form>
               </div>
@@ -774,6 +776,85 @@ const particlesOptions = computed(() => {
 .btn-warm:hover {
   filter: brightness(1.1);
   transform: translateY(-2px);
+}
+
+.btn-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  border-radius: 36px;
+  font-weight: 700;
+  height: 54px;
+  font-size: 16px;
+  padding-inline: 20px;
+  background-color: transparent;
+  color: #f97316;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: center;
+  transition: all .25s ease-in-out;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.2);
+}
+.dark .btn-submit {
+  color: #fff;
+}
+.btn-submit:is(:hover, :focus) {
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.35);
+}
+.btn-submit::after {
+  content: '';
+  position: absolute;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  border: 1px solid #f97316;
+  border-radius: 36px;
+  z-index: 2;
+  pointer-events: none;
+}
+.btn-submit::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #f97316 0%, #f59e0b 100%);
+  z-index: 1;
+  left: -2px;
+  transform: translateX(92%);
+  transition: all .35s ease-out;
+  border-radius: 36px;
+}
+.btn-submit:is(:hover, :focus)::before {
+  transform: translateX(0%);
+}
+.btn-submit-text {
+  white-space: nowrap;
+  line-height: 1.2;
+  padding-inline-end: 50px;
+  z-index: 2;
+  position: relative;
+}
+.btn-submit-icon {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 54px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #f97316 0%, #f59e0b 100%);
+  z-index: 2;
+}
+.btn-submit-icon svg {
+  color: #fff;
 }
 
 .skill-chip {
