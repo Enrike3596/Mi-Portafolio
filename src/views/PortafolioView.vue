@@ -84,7 +84,7 @@ const content = reactive({
     contactFormService: 'Selecciona un Servicio',
     contactFormMessage: 'Escribe tu Mensaje',
     contactFormSubmit: 'Enviar Mensaje',
-    downloadCV: 'Descargar CV',
+    downloadCV: 'Ver Hoja de Vida',
     contactEmail: 'enrique@example.com',
     contactPhone: '+52 (123) 456-7890',
     contactLocation: 'Ciudad de México, MX',
@@ -146,7 +146,7 @@ const content = reactive({
     contactFormService: 'Select a Service',
     contactFormMessage: 'Your Message',
     contactFormSubmit: 'Send Message',
-    downloadCV: 'Download CV',
+    downloadCV: 'View Resume',
     contactEmail: 'enrique@example.com',
     contactPhone: '+52 (123) 456-7890',
     contactLocation: 'Mexico City, MX',
@@ -485,9 +485,9 @@ const particlesOptions = computed(() => {
         <p class="relative z-10 text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-2xl font-light">
           {{ content[currentLanguage].role }}
         </p>
-        <a href="/cv.pdf" download class="relative z-10 mt-8 px-8 py-3 btn-warm text-white rounded-full hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
+        <RouterLink to="/hoja-de-vida" class="relative z-10 mt-8 px-8 py-3 btn-warm text-white rounded-full hover:scale-105 transition-transform shadow-lg shadow-orange-500/20">
           {{ content[currentLanguage].downloadCV }}
-        </a>
+        </RouterLink>
       </header>
 
       <!-- Sección Sobre Mí -->
