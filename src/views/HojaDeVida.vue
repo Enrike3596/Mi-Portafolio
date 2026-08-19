@@ -11,7 +11,7 @@
 				</div>
 				<div class="sidebar-name">
 					<h1>Luis Enrique<br />Cuéllar Velásquez</h1>
-					<div class="title">Técnico en Sistemas y Desarrollador Full Stack</div>
+					<div class="title">Técnico en Sistemas & Desarrollador Full Stack</div>
 				</div>
 
 				<div class="sidebar-section">
@@ -133,12 +133,12 @@
 						<div class="exp-header">
 							<div>
 								<div class="exp-role">
-									Aprendiz de Tecnología - Desarrollo Full Stack
+									Aprendiz de Tecnología — Desarrollo Full Stack
 									<span class="highlight-badge">ACTUAL</span>
 								</div>
 								<div class="exp-company">Indigo Group</div>
 							</div>
-							<span class="exp-date">Abr 2025 - Actualidad</span>
+							<span class="exp-date">Abr 2025 — Actualidad</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
@@ -155,7 +155,7 @@
 								<div class="exp-role">On Site Technical Support Analyst L2</div>
 								<div class="exp-company">Stefanini Colombia</div>
 							</div>
-							<span class="exp-date">Ago 2025 - Marzo 2026</span>
+							<span class="exp-date">Ago 2025 — Marzo 2026</span>
 						</div>
 						<ul class="exp-desc">
 							<li>
@@ -178,7 +178,7 @@
 								<div class="exp-role">Técnico en Soporte Tecnológico</div>
 								<div class="exp-company">MAB Ingeniería de Valor</div>
 							</div>
-							<span class="exp-date">Ene 2025 - Jul 2025</span>
+							<span class="exp-date">Ene 2025 — Jul 2025</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Administración de accesos y cuentas en Google Workspace</li>
@@ -196,7 +196,7 @@
 								<div class="exp-role">Asistente de Tecnología</div>
 								<div class="exp-company">Sonepar Colombia SAS</div>
 							</div>
-							<span class="exp-date">Sep 2024 - Ene 2025</span>
+							<span class="exp-date">Sep 2024 — Ene 2025</span>
 						</div>
 						<ul class="exp-desc">
 							<li>
@@ -214,9 +214,9 @@
 						<div class="exp-header">
 							<div>
 								<div class="exp-role">Auxiliar de Soporte Técnico</div>
-								<div class="exp-company">INTER RAPIDISIMO</div>
+								<div class="exp-company">INTER RAPIDÍSIMO</div>
 							</div>
-							<span class="exp-date">Sep 2022 - Sep 2024</span>
+							<span class="exp-date">Sep 2022 — Sep 2024</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Mantenimiento preventivo y correctivo de equipos e impresoras Kyocera</li>
@@ -234,25 +234,25 @@
 					<div class="edu-item">
 						<div class="edu-degree">Tecnólogo en Análisis y Desarrollo de Software</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
-						<div class="edu-date">Abr 2024 - En curso</div>
+						<div class="edu-date">Abr 2024 — En curso</div>
 					</div>
 
 					<div class="edu-item">
 						<div class="edu-degree">Técnico en Mantenimiento de Equipos de Cómputo y Dispositivos Móviles</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
-						<div class="edu-date">Culminado - May 2023</div>
+						<div class="edu-date">Culminado — May 2023</div>
 					</div>
 
 					<div class="edu-item">
 						<div class="edu-degree">Técnico en Sistemas</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
-						<div class="edu-date">Culminado - Nov 2013</div>
+						<div class="edu-date">Culminado — Nov 2013</div>
 					</div>
 
 					<div class="edu-item">
 						<div class="edu-degree">Bachiller Técnico</div>
 						<div class="edu-school">Institución Educativa Central Saldaña (Tolima)</div>
-						<div class="edu-date">Culminado - Dic 2013</div>
+						<div class="edu-date">Culminado — Dic 2013</div>
 					</div>
 				</div>
 
@@ -261,19 +261,19 @@
 					<div class="cert-grid">
 						<div class="cert-item">
 							<div class="cert-name">Desarrollo Web con PHP</div>
-							<div class="cert-org">SENA - Jul 2025</div>
+							<div class="cert-org">SENA — Jul 2025</div>
 						</div>
 						<div class="cert-item">
 							<div class="cert-name">Fundamentos de Python</div>
-							<div class="cert-org">Cisco Networking Academy - Jun 2025</div>
+							<div class="cert-org">Cisco Networking Academy — Jun 2025</div>
 						</div>
 						<div class="cert-item">
 							<div class="cert-name">Programar en Python</div>
-							<div class="cert-org">META (Coursera) - May 2025</div>
+							<div class="cert-org">META (Coursera) — May 2025</div>
 						</div>
 						<div class="cert-item">
 							<div class="cert-name">Microsoft Office Básico</div>
-							<div class="cert-org">SENA - Dic 2020</div>
+							<div class="cert-org">SENA — Dic 2020</div>
 						</div>
 					</div>
 				</div>
@@ -291,28 +291,10 @@ function printCV() {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-:root {
-	--primary: #0f172a;
-	--accent: #2563eb;
-	--accent-light: #3b82f6;
-	--accent-dark: #1d4ed8;
-	--surface: #ffffff;
-	--surface-alt: #f8fafc;
-	--text: #1e293b;
-	--text-secondary: #64748b;
-	--text-light: #94a3b8;
-	--border: #e2e8f0;
-	--sidebar-bg: #0f172a;
-	--sidebar-text: #e2e8f0;
-	--sidebar-accent: #60a5fa;
 }
 
 .cv-wrapper {
@@ -725,15 +707,6 @@ function printCV() {
 }
 
 @media print {
-	html,
-	body {
-		width: 210mm;
-		height: 297mm;
-		background: #fff;
-		-webkit-print-color-adjust: exact;
-		print-color-adjust: exact;
-	}
-
 	.cv-wrapper {
 		background: #fff;
 		padding: 0;
@@ -763,6 +736,39 @@ function printCV() {
 	.contact-item,
 	.skill-tag,
 	.language-item {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+	--primary: #0f172a;
+	--accent: #2563eb;
+	--accent-light: #3b82f6;
+	--accent-dark: #1d4ed8;
+	--surface: #ffffff;
+	--surface-alt: #f8fafc;
+	--text: #1e293b;
+	--text-secondary: #64748b;
+	--text-light: #94a3b8;
+	--border: #e2e8f0;
+	--sidebar-bg: #0f172a;
+	--sidebar-text: #e2e8f0;
+	--sidebar-accent: #60a5fa;
+	--green: #10b981;
+	--amber: #f59e0b;
+}
+
+@media print {
+	html,
+	body {
+		width: 210mm;
+		height: 297mm;
+		background: #fff;
 		-webkit-print-color-adjust: exact;
 		print-color-adjust: exact;
 	}
