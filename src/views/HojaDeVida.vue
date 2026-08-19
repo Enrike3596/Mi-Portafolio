@@ -7,35 +7,35 @@
 		<div class="page">
 			<aside class="sidebar">
 				<div class="profile-photo">
-					<img :src="profilePhoto" alt="Foto de perfil de Luis Enrique Cuellar Velasquez" />
+					<img :src="profilePhoto" alt="Foto de perfil de Luis Enrique Cuéllar Velásquez" />
 				</div>
 				<div class="sidebar-name">
-					<h1>Luis Enrique<br />Cuellar Velasquez</h1>
-					<div class="title">Tecnico en Sistemas y Desarrollador Full Stack</div>
+					<h1>Luis Enrique<br />Cuéllar Velásquez</h1>
+					<div class="title">Técnico en Sistemas y Desarrollador Full Stack</div>
 				</div>
 
 				<div class="sidebar-section">
 					<h3>Contacto</h3>
 					<div class="contact-item">
 						<span class="icon">📍</span>
-						<span>Bogota, D.C., Colombia</span>
+						<span>Bogotá, D.C., Colombia</span>
 					</div>
 					<div class="contact-item">
 						<span class="icon">📱</span>
-						<span>+57 322 211 9815</span>
+						<a href="tel:+573222119815">+57 322 211 9815</a>
 					</div>
 					<div class="contact-item">
 						<span class="icon">📞</span>
-						<span>+57 314 318 4060</span>
+						<a href="tel:+573143184060">+57 314 318 4060</a>
 					</div>
 					<div class="contact-item">
 						<span class="icon">✉️</span>
-						<span>luisenrique7837@hotmail.com</span>
+						<a href="mailto:luisenrique7837@hotmail.com">luisenrique7837@hotmail.com</a>
 					</div>
 				</div>
 
 				<div class="sidebar-section">
-					<h3>Habilidades Tecnicas</h3>
+					<h3>Habilidades Técnicas</h3>
 					<div class="skill-tags">
 						<span class="skill-tag">Active Directory</span>
 						<span class="skill-tag">Microsoft 365</span>
@@ -62,7 +62,7 @@
 				<div class="sidebar-section">
 					<h3>Idiomas</h3>
 					<div class="language-item">
-						<span>Espanol</span>
+						<span>Español</span>
 						<div class="language-level">
 							<div class="dot filled"></div>
 							<div class="dot filled"></div>
@@ -72,7 +72,7 @@
 						</div>
 					</div>
 					<div class="language-item">
-						<span>Ingles</span>
+						<span>Inglés</span>
 						<div class="language-level">
 							<div class="dot filled"></div>
 							<div class="dot"></div>
@@ -87,12 +87,12 @@
 					<h3>Habilidades Personales</h3>
 					<ul class="soft-skill-list">
 						<li>Trabajo en equipo</li>
-						<li>Resolucion de problemas</li>
+						<li>Resolución de problemas</li>
 						<li>Adaptabilidad</li>
 						<li>Proactividad</li>
 						<li>Responsabilidad</li>
-						<li>Orientacion al servicio</li>
-						<li>Comunicacion efectiva</li>
+						<li>Orientación al servicio</li>
+						<li>Comunicación efectiva</li>
 						<li>Aprendizaje continuo</li>
 					</ul>
 				</div>
@@ -114,14 +114,14 @@
 				<div class="section">
 					<div class="section-title"><span class="icon">👤</span> Perfil Profesional</div>
 					<p class="profile-text">
-						Tecnico en Sistemas y Mantenimiento con mas de 4 anos de experiencia en soporte tecnico
-						especializado (remoto y presencial), resolucion de incidencias criticas e implementacion de
-						soluciones tecnologicas en entornos corporativos. Experto en diagnostico avanzado de hardware y
-						software, administracion de Active Directory, gestion de plataformas Microsoft 365 y
-						configuracion de ecosistemas Google Workspace. En formacion continua como Tecnologo en Analisis
+						Técnico en Sistemas y Mantenimiento con más de 4 años de experiencia en soporte técnico
+						especializado (remoto y presencial), resolución de incidencias críticas e implementación de
+						soluciones tecnológicas en entornos corporativos. Experto en diagnóstico avanzado de hardware y
+						software, administración de Active Directory, gestión de plataformas Microsoft 365 y
+						configuración de ecosistemas Google Workspace. En formación continua como Tecnólogo en Análisis
 						y Desarrollo de Software, expandiendo mi perfil hacia el desarrollo web Full Stack con
-						conocimientos de tecnologias frontend (HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React) y
-						lenguajes de programacion (PHP, Java, C#, Python), ademas de administracion de bases de datos
+						conocimientos de tecnologías frontend (HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React) y
+						lenguajes de programación (PHP, Java, C#, Python), además de administración de bases de datos
 						(MySQL, PostgreSQL).
 					</p>
 				</div>
@@ -133,7 +133,7 @@
 						<div class="exp-header">
 							<div>
 								<div class="exp-role">
-									Aprendiz de Tecnologia - Desarrollo Full Stack
+									Aprendiz de Tecnología - Desarrollo Full Stack
 									<span class="highlight-badge">ACTUAL</span>
 								</div>
 								<div class="exp-company">Indigo Group</div>
@@ -142,10 +142,10 @@
 						</div>
 						<ul class="exp-desc">
 							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
-							<li>Implementacion de APIs REST, desarrollo frontend y gestion de bases de datos</li>
-							<li>Analisis, depuracion y solucion de errores de software</li>
-							<li>Uso de Git para control de versiones y gestion de ramas</li>
-							<li>Participacion en analisis de requerimientos, pruebas, documentacion y despliegue</li>
+							<li>Implementación de APIs REST, desarrollo frontend y gestión de bases de datos</li>
+							<li>Análisis, depuración y solución de errores de software</li>
+							<li>Uso de Git para control de versiones y gestión de ramas</li>
+							<li>Participación en análisis de requerimientos, pruebas, documentación y despliegue</li>
 						</ul>
 					</div>
 
@@ -159,15 +159,15 @@
 						</div>
 						<ul class="exp-desc">
 							<li>
-								Mantenimiento preventivo y correctivo de equipos informaticos con diagnostico y optimizacion
+								Mantenimiento preventivo y correctivo de equipos informáticos con diagnóstico y optimización
 								de rendimiento
 							</li>
-							<li>Administracion de usuarios, grupos, permisos y politicas en Active Directory</li>
-							<li>Soporte y configuracion de Microsoft 365 (Outlook, OneDrive, Teams, SharePoint)</li>
-							<li>Gestion y control de inventarios tecnologicos y activos de TI</li>
-							<li>Restablecimiento de contrasenas y recuperacion de cuentas corporativas</li>
+							<li>Administración de usuarios, grupos, permisos y políticas en Active Directory</li>
+							<li>Soporte y configuración de Microsoft 365 (Outlook, OneDrive, Teams, SharePoint)</li>
+							<li>Gestión y control de inventarios tecnológicos y activos de TI</li>
+							<li>Restablecimiento de contraseñas y recuperación de cuentas corporativas</li>
 							<li>
-								Atencion, diagnostico y resolucion de incidentes garantizando continuidad operativa
+								Atención, diagnóstico y resolución de incidentes garantizando continuidad operativa
 							</li>
 						</ul>
 					</div>
@@ -175,83 +175,83 @@
 					<div class="exp-item">
 						<div class="exp-header">
 							<div>
-								<div class="exp-role">Tecnico en Soporte Tecnologico</div>
-								<div class="exp-company">MAB Ingenieria de Valor</div>
+								<div class="exp-role">Técnico en Soporte Tecnológico</div>
+								<div class="exp-company">MAB Ingeniería de Valor</div>
 							</div>
 							<span class="exp-date">Ene 2025 - Jul 2025</span>
 						</div>
 						<ul class="exp-desc">
-							<li>Administracion de accesos y cuentas en Google Workspace</li>
+							<li>Administración de accesos y cuentas en Google Workspace</li>
 							<li>
-								Gestion, actualizacion y control de inventarios tecnologicos con coordinacion de proveedores
+								Gestión, actualización y control de inventarios tecnológicos con coordinación de proveedores
 							</li>
-							<li>Administracion de GLPI para registro, seguimiento y atencion de incidentes</li>
-							<li>Ejecucion de mantenimiento preventivo y correctivo de equipos informaticos</li>
+							<li>Administración de GLPI para registro, seguimiento y atención de incidentes</li>
+							<li>Ejecución de mantenimiento preventivo y correctivo de equipos informáticos</li>
 						</ul>
 					</div>
 
 					<div class="exp-item">
 						<div class="exp-header">
 							<div>
-								<div class="exp-role">Asistente de Tecnologia</div>
+								<div class="exp-role">Asistente de Tecnología</div>
 								<div class="exp-company">Sonepar Colombia SAS</div>
 							</div>
 							<span class="exp-date">Sep 2024 - Ene 2025</span>
 						</div>
 						<ul class="exp-desc">
 							<li>
-								Gestion del Directorio Activo: usuarios, grupos, permisos y politicas de seguridad
+								Gestión del Directorio Activo: usuarios, grupos, permisos y políticas de seguridad
 							</li>
 							<li>
-								Soporte y configuracion de Microsoft 365 y administracion de la plataforma Azure
+								Soporte y configuración de Microsoft 365 y administración de la plataforma Azure
 							</li>
-							<li>Restablecimiento de contrasenas y recuperacion de cuentas de usuarios</li>
-							<li>Mantenimiento preventivo y correctivo de equipos informaticos</li>
+							<li>Restablecimiento de contraseñas y recuperación de cuentas de usuarios</li>
+							<li>Mantenimiento preventivo y correctivo de equipos informáticos</li>
 						</ul>
 					</div>
 
 					<div class="exp-item">
 						<div class="exp-header">
 							<div>
-								<div class="exp-role">Auxiliar de Soporte Tecnico</div>
+								<div class="exp-role">Auxiliar de Soporte Técnico</div>
 								<div class="exp-company">INTER RAPIDISIMO</div>
 							</div>
 							<span class="exp-date">Sep 2022 - Sep 2024</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Mantenimiento preventivo y correctivo de equipos e impresoras Kyocera</li>
-							<li>Instalacion, configuracion y formateo de sistemas operativos Windows</li>
-							<li>Coordinacion con proveedores para gestion de inventarios</li>
-							<li>Gestion de herramientas corporativas: GLPI, Controller y Novasoft</li>
-							<li>Atencion al cliente con enfoque en resolucion rapida de problemas</li>
+							<li>Instalación, configuración y formateo de sistemas operativos Windows</li>
+							<li>Coordinación con proveedores para gestión de inventarios</li>
+							<li>Gestión de herramientas corporativas: GLPI, Controller y Novasoft</li>
+							<li>Atención al cliente con enfoque en resolución rápida de problemas</li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="section">
-					<div class="section-title"><span class="icon">🎓</span> Formacion Academica</div>
+					<div class="section-title"><span class="icon">🎓</span> Formación Académica</div>
 
 					<div class="edu-item">
-						<div class="edu-degree">Tecnologo en Analisis y Desarrollo de Software</div>
+						<div class="edu-degree">Tecnólogo en Análisis y Desarrollo de Software</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
 						<div class="edu-date">Abr 2024 - En curso</div>
 					</div>
 
 					<div class="edu-item">
-						<div class="edu-degree">Tecnico en Mantenimiento de Equipos de Computo y Dispositivos Moviles</div>
+						<div class="edu-degree">Técnico en Mantenimiento de Equipos de Cómputo y Dispositivos Móviles</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
 						<div class="edu-date">Culminado - May 2023</div>
 					</div>
 
 					<div class="edu-item">
-						<div class="edu-degree">Tecnico en Sistemas</div>
+						<div class="edu-degree">Técnico en Sistemas</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
 						<div class="edu-date">Culminado - Nov 2013</div>
 					</div>
 
 					<div class="edu-item">
-						<div class="edu-degree">Bachiller Tecnico</div>
-						<div class="edu-school">Institucion Educativa Central Saldana (Tolima)</div>
+						<div class="edu-degree">Bachiller Técnico</div>
+						<div class="edu-school">Institución Educativa Central Saldaña (Tolima)</div>
 						<div class="edu-date">Culminado - Dic 2013</div>
 					</div>
 				</div>
@@ -272,7 +272,7 @@
 							<div class="cert-org">META (Coursera) - May 2025</div>
 						</div>
 						<div class="cert-item">
-							<div class="cert-name">Microsoft Office Basico</div>
+							<div class="cert-name">Microsoft Office Básico</div>
 							<div class="cert-org">SENA - Dic 2020</div>
 						</div>
 					</div>
@@ -450,6 +450,15 @@ function printCV() {
 	justify-content: center;
 	font-size: 13px;
 	flex-shrink: 0;
+}
+
+.contact-item a {
+	color: var(--sidebar-text);
+	text-decoration: none;
+}
+
+.contact-item a:hover {
+	text-decoration: underline;
 }
 
 .skill-tags {
