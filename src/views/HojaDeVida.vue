@@ -1,10 +1,37 @@
 <template>
-	<div class="cv-wrapper">
-		<div class="print-actions">
-			<button class="print-btn" @click="printCV">Descargar PDF</button>
-		</div>
+	<div :class="isDark ? 'dark' : ''">
+		<div class="cv-screen relative min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+			<nav
+				class="cv-nav fixed top-0 left-0 w-full p-4 md:px-8 md:py-4 flex justify-between items-center gap-3 backdrop-blur-md bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800 z-50"
+			>
+				<RouterLink
+					to="/"
+					class="flex items-center gap-2 font-semibold text-slate-700 dark:text-slate-200 hover:text-orange-500 dark:hover:text-orange-400 transition"
+				>
+					<span aria-hidden="true">←</span>
+					<span class="hidden sm:inline">Volver al Portafolio</span>
+				</RouterLink>
+				<div class="flex items-center gap-2 md:gap-3">
+					<button
+						@click="toggleTheme"
+						aria-label="Cambiar tema"
+						class="p-2 rounded-full bg-slate-200 dark:bg-slate-800 hover:ring-2 ring-orange-400 transition-all"
+					>
+						<span v-if="isDark">☀️</span>
+						<span v-else>🌙</span>
+					</button>
+					<button class="print-btn" @click="printCV">Descargar PDF</button>
+				</div>
+			</nav>
 
-		<div class="page">
+			<vue-particles
+				id="cv-particles"
+				:options="particlesOptions"
+				class="cv-particles fixed inset-0 pointer-events-none z-0"
+			/>
+
+			<div class="cv-wrapper">
+				<div class="page">
 			<aside class="sidebar">
 				<div class="profile-photo">
 					<img :src="profilePhoto" alt="Foto de perfil de Luis Enrique Cuéllar Velásquez" />
@@ -278,39 +305,286 @@
 					</div>
 				</div>
 			</main>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
+import { computed, ref } from 'vue';
+
 const profilePhoto = new URL('../assets/cv.jpg', import.meta.url).href;
+
+const isDark = ref(
+	typeof document !== 'undefined' && document.documentElement.classList.contains('dark'),
+);
+
+function toggleTheme() {
+	isDark.value = !isDark.value;
+	document.documentElement.classList.toggle('dark');
+}
 
 function printCV() {
 	window.print();
 }
+
+const particlesOptions = computed(() => {
+	const baseParticleColor = isDark.value ? '#f97316' : '#ea580c';
+	const baseTrailColor = isDark.value ? '#f97316' : '#ea580c';
+
+	return {
+		autoPlay: true,
+		background: {
+			color: { value: 'transparent' },
+			opacity: 1,
+		},
+		clear: true,
+		delay: 0,
+		fullScreen: {
+			enable: false,
+		},
+		detectRetina: true,
+		fpsLimit: 120,
+		interactivity: {
+			detectsOn: 'window',
+			events: {
+				onClick: {
+					enable: false,
+					mode: [],
+				},
+				onHover: {
+					enable: true,
+					mode: 'trail',
+					parallax: {
+						enable: false,
+						force: 2,
+						smooth: 10,
+					},
+				},
+				resize: {
+					delay: 0.5,
+					enable: true,
+				},
+			},
+			modes: {
+				trail: {
+					delay: 0.005,
+					pauseOnStop: true,
+					quantity: 5,
+					particles: {
+						color: {
+							value: baseTrailColor,
+							animation: {
+								enable: true,
+								speed: 400,
+								sync: true,
+							},
+						},
+						collisions: {
+							enable: false,
+						},
+						links: {
+							enable: false,
+						},
+						move: {
+							outModes: {
+								default: 'destroy',
+							},
+							speed: 2,
+						},
+						size: {
+							value: {
+								min: 1,
+								max: 5,
+							},
+							animation: {
+								enable: true,
+								speed: 5,
+								sync: true,
+								startValue: 'min',
+								destroy: 'max',
+							},
+						},
+					},
+				},
+			},
+		},
+		particles: {
+			collisions: {
+				enable: false,
+			},
+			color: {
+				value: baseParticleColor,
+				animation: {
+					h: {
+						count: 0,
+						enable: true,
+						speed: 50,
+						decay: 0,
+						delay: 0,
+						sync: false,
+						offset: 0,
+					},
+					s: {
+						count: 0,
+						enable: false,
+						speed: 1,
+						decay: 0,
+						delay: 0,
+						sync: true,
+						offset: 0,
+					},
+					l: {
+						count: 0,
+						enable: false,
+						speed: 1,
+						decay: 0,
+						delay: 0,
+						sync: true,
+						offset: 0,
+					},
+				},
+			},
+			links: {
+				blink: false,
+				color: {
+					value: 'random',
+				},
+				consent: false,
+				distance: 100,
+				enable: true,
+				frequency: 1,
+				opacity: isDark.value ? 1 : 0.6,
+				shadow: {
+					blur: 5,
+					color: {
+						value: '#000',
+					},
+					enable: false,
+				},
+				triangles: {
+					enable: false,
+					frequency: 1,
+				},
+				width: 1,
+				warp: false,
+			},
+			move: {
+				angle: {
+					offset: 0,
+					value: 90,
+				},
+				attract: {
+					distance: 200,
+					enable: false,
+					rotate: {
+						x: 3000,
+						y: 3000,
+					},
+				},
+				center: {
+					x: 50,
+					y: 50,
+					mode: 'percent',
+					radius: 0,
+				},
+				decay: 0,
+				direction: 'none',
+				drift: 0,
+				enable: true,
+				gravity: {
+					acceleration: 9.81,
+					enable: false,
+					inverse: false,
+					maxSpeed: 50,
+				},
+				outModes: {
+					default: 'out',
+					bottom: 'out',
+					left: 'out',
+					right: 'out',
+					top: 'out',
+				},
+				random: false,
+				size: false,
+				speed: 2,
+				straight: false,
+				trail: {
+					enable: false,
+					length: 10,
+					fill: {},
+				},
+			},
+			number: {
+				density: {
+					enable: true,
+					width: 1920,
+					height: 1080,
+				},
+				value: 80,
+			},
+			opacity: {
+				value: {
+					min: isDark.value ? 0.3 : 0.4,
+					max: 0.8,
+				},
+				animation: {
+					count: 0,
+					enable: true,
+					speed: 0.5,
+					decay: 0,
+					delay: 0,
+					sync: false,
+					mode: 'auto',
+					startValue: 'random',
+					destroy: 'none',
+				},
+			},
+			shape: {
+				type: 'circle',
+			},
+			size: {
+				value: {
+					min: 1,
+					max: 3,
+				},
+				animation: {
+					count: 0,
+					enable: true,
+					speed: 3,
+					decay: 0,
+					delay: 0,
+					sync: false,
+					mode: 'auto',
+					startValue: 'random',
+					destroy: 'none',
+				},
+			},
+		},
+		pauseOnBlur: true,
+		pauseOnOutsideViewport: true,
+		motion: {
+			disable: true,
+			reduce: {
+				factor: 4,
+				value: true,
+			},
+		},
+	};
+});
 </script>
 
 <style scoped>
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 .cv-wrapper {
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-	background: #e2e8f0;
+	background: transparent;
 	color: var(--text);
 	line-height: 1.6;
 	min-height: 100vh;
-	padding: 20px 0;
-}
-
-.print-actions {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	z-index: 10;
+	padding: 96px 20px 60px;
+	position: relative;
+	z-index: 1;
 }
 
 .print-btn {
@@ -700,19 +974,23 @@ function printCV() {
 		grid-template-columns: 1fr;
 	}
 
-	.print-actions {
-		top: 10px;
-		right: 10px;
+	.cv-wrapper {
+		padding: 84px 0 40px;
 	}
 }
 
 @media print {
+	.cv-screen {
+		background: #fff !important;
+	}
+
 	.cv-wrapper {
 		background: #fff;
 		padding: 0;
 	}
 
-	.print-actions {
+	.cv-nav,
+	.cv-particles {
 		display: none !important;
 	}
 
