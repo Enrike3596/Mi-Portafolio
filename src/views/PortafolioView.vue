@@ -4,17 +4,17 @@ import { computed, reactive, ref } from 'vue';
 
 import {
   siCss,
-  siDjango,
-  siDocker,
-  siExpress,
   siGit,
   siHtml5,
   siJavascript,
   siMongodb,
   siMysql,
   siNodedotjs,
+  siDotnet,
+  siPostgresql,
   siPython,
   siReact,
+  siSpringboot,
   siTailwindcss,
   siTypescript,
   siVuedotjs,
@@ -33,22 +33,22 @@ const content = reactive({
     },
     skills: {
       title: 'Habilidades',
-      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Express.js', 'Python', 'Django', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'Docker', 'AWS']
+      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python',  'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
     },
     experience: {
       title: 'Experiencia',
       list: [
         {
-          title: 'Desarrollador Full Stack Senior',
-          company: 'Tech Solutions Inc.',
-          duration: 'Enero 2022 - Presente',
-          description: 'Lideré el desarrollo de aplicaciones web escalables utilizando Vue.js y Node.js. Implementé nuevas funcionalidades y optimicé el rendimiento de la plataforma, además de participar en el desarrollo de APIs RESTful.'
-        },
-        {
-          title: 'Desarrollador Frontend & Mobile',
-          company: 'Creative Agency',
-          duration: 'Julio 2019 - Diciembre 2021',
-          description: 'Diseñé y desarrollé interfaces de usuario interactivas con React Native y Tailwind CSS para aplicaciones móviles, y con React para web. Colaboré estrechamente con equipos de diseño para asegurar la fidelidad visual y la experiencia de usuario.'
+          title: 'Aprendiz de Tecnología — Desarrollo Full Stack',
+          company: 'Indigo Group',
+          duration: 'Abr 2025 — Actualidad',
+          description: [
+            'Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#',
+            'Implementación de APIs REST, desarrollo frontend y gestión de bases de datos',
+            'Análisis, depuración y solución de errores de software',
+            'Uso de Git para control de versiones y gestión de ramas',
+            'Participación en análisis de requerimientos, pruebas, documentación y despliegue'
+          ]
         }
       ]
     },
@@ -85,9 +85,9 @@ const content = reactive({
     contactFormMessage: 'Escribe tu Mensaje',
     contactFormSubmit: 'Enviar Mensaje',
     downloadCV: 'Ver Hoja de Vida',
-    contactEmail: 'enrique@example.com',
-    contactPhone: '+52 (123) 456-7890',
-    contactLocation: 'Ciudad de México, MX',
+    contactEmail: 'luisenrique7837@hotmail.com',
+    contactPhone: '+57 (322) 211-9815',
+    contactLocation: 'Bogotá, Colombia',
     contactLocationLabel: 'Ubicación',
     contactFormSubject: 'Asunto',
     contactInfoTitle: 'Información de Contacto',
@@ -102,16 +102,23 @@ const content = reactive({
     },
     skills: {
       title: 'Skills',
-      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Express.js', 'Python', 'Django', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'Docker', 'AWS']
+      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
     },
     experience: {
       title: 'Experience',
       list: [
         {
-          /* Lines 102-105 omitted */
-          description: 'Led the development of scalable web applications using Vue.js and Node.js. Implemented new features and optimized platform performance, and participated in RESTful API development.'
-        },
-        {/* Lines 108-112 omitted */}
+          title: 'Technology Apprentice — Full Stack Development',
+          company: 'Indigo Group',
+          duration: 'Apr 2025 — Present',
+          description: [
+            'Development and maintenance of Full Stack web applications with .NET and C#',
+            'REST API implementation, frontend development, and database management',
+            'Software error analysis, debugging, and resolution',
+            'Use of Git for version control and branch management',
+            'Participation in requirements analysis, testing, documentation, and deployment'
+          ]
+        }
       ]
     },
     projectsList: [
@@ -147,9 +154,9 @@ const content = reactive({
     contactFormMessage: 'Your Message',
     contactFormSubmit: 'Send Message',
     downloadCV: 'View Resume',
-    contactEmail: 'enrique@example.com',
-    contactPhone: '+52 (123) 456-7890',
-    contactLocation: 'Mexico City, MX',
+    contactEmail: 'luisenrique7837@hotmail.com',
+    contactPhone: '+57 (322) 211-9815',
+    contactLocation: 'Bogotá, Colombia',
     contactLocationLabel: 'Location',
     contactFormSubject: 'Subject',
     contactInfoTitle: 'Contact Information',
@@ -173,7 +180,7 @@ const formData = reactive({
 const submitForm = () => {
   const { name, email, subject, message } = formData;
   if (!name || !email || !message) return;
-  const mailto = `mailto:enrique@example.com?subject=${encodeURIComponent(subject || 'Contacto')}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`)}`;
+  const mailto = `mailto:luisenrique7837@hotmail.com?subject=${encodeURIComponent(subject || 'Contacto')}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`)}`;
   window.location.href = mailto;
 };
 
@@ -183,19 +190,16 @@ const skillIcons = {
   'Vue.js': siVuedotjs,
   'React Native': siReact,
   'Node.js': siNodedotjs,
-  'Express.js': siExpress,
   Python: siPython,
-  Django: siDjango,
   SQL: siMysql,
   MongoDB: siMongodb,
   HTML: siHtml5,
   CSS: siCss,
   'Tailwind CSS': siTailwindcss,
   Git: siGit,
-  Docker: siDocker,
-  AWS: {
-    path: 'M19.35 10.04A7.49 7.49 0 0 0 12 4a7.49 7.49 0 0 0-7.25 5.53A5.5 5.5 0 0 0 5.5 20h13a4.5 4.5 0 0 0 .85-8.96Z',
-  },
+  PostgreSQL: siPostgresql,
+  'C# / .NET': siDotnet,
+  'Java / Spring Boot': siSpringboot,
 };
 
 const skillsWithIcons = computed(() =>
@@ -547,7 +551,9 @@ const particlesOptions = computed(() => {
             <h3 class="text-2xl font-bold">{{ job.title }}</h3>
             <p class="text-orange-600 dark:text-orange-400 text-lg font-semibold">{{ job.company }}</p>
             <p class="text-sm text-slate-500 dark:text-slate-400">{{ job.duration }}</p>
-            <p class="mt-4 text-slate-700 dark:text-slate-300 leading-snug">{{ job.description }}</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-700 dark:text-slate-300 leading-snug">
+              <li v-for="responsibility in job.description" :key="responsibility">{{ responsibility }}</li>
+            </ul>
           </div>
         </div>
       </section>
