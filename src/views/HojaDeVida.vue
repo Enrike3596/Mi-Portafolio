@@ -141,14 +141,14 @@
 				<div class="section">
 					<div class="section-title"><span class="icon">👤</span> Perfil Profesional</div>
 					<p class="profile-text">
-						Técnico en Sistemas y Mantenimiento con más de 4 años de experiencia en soporte técnico
+						Técnico en Sistemas y Mantenimiento de computadores con más de 4 años de experiencia en soporte técnico
 						especializado (remoto y presencial), resolución de incidencias críticas e implementación de
 						soluciones tecnológicas en entornos corporativos. Experto en diagnóstico avanzado de hardware y
 						software, administración de Active Directory, gestión de plataformas Microsoft 365 y
 						configuración de ecosistemas Google Workspace. En formación continua como Tecnólogo en Análisis
 						y Desarrollo de Software, expandiendo mi perfil hacia el desarrollo web Full Stack con
 						conocimientos de tecnologías frontend (HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React) y
-						lenguajes de programación (PHP, Java, C#, Python), además de administración de bases de datos
+						lenguajes de programación (PHP, Java (Spring Boot), C#(ASP.NET), Python), además de administración de bases de datos
 						(MySQL, PostgreSQL).
 					</p>
 				</div>
@@ -286,6 +286,14 @@
 				<div class="section">
 					<div class="section-title"><span class="icon">📜</span> Estudios Complementarios</div>
 					<div class="cert-grid">
+						<div class="cert-item">
+							<div class="cert-name">BASES DE DATOS GENERALIDADES Y SISTEMAS DE GESTION</div>
+							<div class="cert-org">SENA — Feb 2026</div>
+						</div>
+						<div class="cert-item">
+							<div class="cert-name">VARIABLES Y ESTRUCTURAS DE CONTROL EN LA PROGRAMACION ORIENTADA A OBJETOS: JAVA</div>
+							<div class="cert-org">SENA — Nov 2025</div>
+						</div>
 						<div class="cert-item">
 							<div class="cert-name">Desarrollo Web con PHP</div>
 							<div class="cert-org">SENA — Jul 2025</div>
