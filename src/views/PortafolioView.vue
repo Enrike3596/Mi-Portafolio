@@ -123,25 +123,25 @@ const content = reactive({
     },
     projectsList: [
       {
-        title: 'E-commerce Platform',
-        description: 'A complete e-commerce platform with product management, shopping cart, and payment gateway, developed with a focus on scalability and security.',
-        technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS S3'],
-        demoLink: '#',
-        repoLink: '#'
+        title: 'Landing Page "AntoJARTE"',
+        description: 'A digital showcase for "AntoJARTE" featuring the brand story, signature doughnut menu, customer testimonials, and physical store location. Its goal is to attract new customers and provide essential information about its products and services.',
+        technologies: ['HTML5', 'Tailwind CSS', 'JavaScript'],
+        demoLink: 'https://enrike3596.github.io/Landing--antoJARTE/',
+        repoLink: 'https://github.com/Enrike3596/Landing--antoJARTE.git'
       },
       {
-        title: 'Mobile Task Management System',
-        description: 'Native mobile application to organize and manage personal and team tasks with real-time collaboration features.',
-        technologies: ['React Native', 'Express.js', 'PostgreSQL', 'Firebase'],
-        demoLink: '#',
-        repoLink: '#'
+        title: 'Landing Page "Urbansys"',
+        description: 'A professional landing page for Urbansys, an all-in-one technology solution that digitalizes and automates residential community management. The platform integrates administrative processes, access control, resident management, internal communication, shared-space reservations, and asset tracking into an efficient, secure, and centralized experience.',
+        technologies: ['Vue 3', 'TailwindCSS 3', 'Vite 7', 'ESLint + Oxlint'],
+        demoLink: 'https://enrike3596.github.io/Landing--Urbansys/',
+        repoLink: 'https://github.com/Enrike3596/Landing--Urbansys.git'
       },
       {
-        title: 'Personal Blog with CMS',
-        description: 'A modern and responsive blog with a custom Content Management System (CMS), allowing easy publishing and article management.',
-        technologies: ['Nuxt.js', 'GraphQL', 'Strapi', 'Docker'],
-        demoLink: '#',
-        repoLink: '#'
+        title: 'Landing Page for Dental Clinic',
+        description: 'A modern and responsive landing page for a dental clinic, designed to present its services, specialties, and medical team professionally. The solution facilitates appointment requests through contact forms, improves the user experience, and strengthens the clinic\'s digital presence to help attract new patients.',
+        technologies: ['Vue 3', 'Vite', 'Bootstrap 5', 'WOW.js + Animate.css'],
+        demoLink: 'https://enrike3596.github.io/Landing--Odontologia/',
+        repoLink: 'https://github.com/Enrike3596/Landing--Odontologia.git'
       }
     ],
     projects: 'Projects',
