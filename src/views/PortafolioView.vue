@@ -29,7 +29,7 @@ const content = reactive({
     role: 'Desarrollador Full Stack & Mobile',
     aboutMe: {
       title: 'Sobre Mí',
-      description: 'Soy un desarrollador Full Stack apasionado por crear soluciones web y móviles innovadoras y eficientes. Con experiencia en tecnologías front-end, back-end y desarrollo móvil, me encanta transformar ideas en productos funcionales y atractivos. Siempre estoy buscando aprender nuevas herramientas y mejorar mis habilidades.'
+      description: 'Soy un desarrollador Full Stack apasionado por crear soluciones web innovadoras y eficientes. Con experiencia en tecnologías front-end, back-end, me encanta transformar ideas en productos funcionales y atractivos. Siempre estoy buscando aprender nuevas herramientas y mejorar mis habilidades.'
     },
     skills: {
       title: 'Habilidades',
