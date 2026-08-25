@@ -41,7 +41,7 @@ const content = reactive({
         {
           title: 'Aprendiz de Tecnología — Desarrollo Full Stack',
           company: 'Indigo Group',
-          duration: 'Abr 2025 — Actualidad',
+          duration: 'Abr 2026 — Actualidad',
           description: [
             'Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#',
             'Implementación de APIs REST, desarrollo frontend y gestión de bases de datos',

@@ -165,7 +165,7 @@
 								</div>
 								<div class="exp-company">Indigo Group</div>
 							</div>
-							<span class="exp-date">Abr 2025 — Actualidad</span>
+							<span class="exp-date">Abr 2026 — Actualidad</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
@@ -1006,11 +1006,17 @@ const particlesOptions = computed(() => {
 		margin: 0;
 		box-shadow: none;
 		width: 210mm;
-		min-height: 297mm;
+		height: 594mm;
+		min-height: 594mm;
+		max-height: 594mm;
 		max-width: 210mm;
-		page-break-inside: avoid;
-		break-inside: avoid;
+		page-break-inside: auto;
+		break-inside: auto;
 		grid-template-columns: 35% 65%;
+	}
+
+	.cert-grid {
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.main,
@@ -1058,6 +1064,7 @@ const particlesOptions = computed(() => {
 		-webkit-print-color-adjust: exact;
 		print-color-adjust: exact;
 	}
+
 }
 
 @page {
