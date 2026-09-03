@@ -141,15 +141,14 @@
 				<div class="section">
 					<div class="section-title"><span class="icon">👤</span> Perfil Profesional</div>
 					<p class="profile-text">
-						Técnico en Sistemas y Mantenimiento de computadores con más de 4 años de experiencia en soporte técnico
-						especializado (remoto y presencial), resolución de incidencias críticas e implementación de
-						soluciones tecnológicas en entornos corporativos. Experto en diagnóstico avanzado de hardware y
-						software, administración de Active Directory, gestión de plataformas Microsoft 365 y
-						configuración de ecosistemas Google Workspace. En formación continua como Tecnólogo en Análisis
-						y Desarrollo de Software, expandiendo mi perfil hacia el desarrollo web Full Stack con
-						conocimientos de tecnologías frontend (HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React) y
-						lenguajes de programación (PHP, Java (Spring Boot), C#(ASP.NET), Python), además de administración de bases de datos
-						(MySQL, PostgreSQL).
+						Tecnólogo en formación en Análisis y Desarrollo de Software, con gran interés en continuar creciendo en el
+						área de desarrollo web y adquirir experiencia y nuevos conocimientos en proyectos de software. Mi objetivo
+						es consolidar mi perfil como desarrollador Full Stack, aplicando conocimientos de frontend (HTML5, CSS3,
+						Bootstrap, Tailwind CSS, Vue.js y React), lenguajes de programación (PHP, Java con Spring Boot, C# con
+						ASP.NET y Python), APIs REST y bases de datos (MySQL y PostgreSQL). Complemento esta orientación con más
+						de 4 años de experiencia en soporte técnico especializado, remoto y presencial, diagnóstico de hardware y
+						software, resolución de incidencias e implementación de soluciones tecnológicas en entornos corporativos,
+						además de la administración de Active Directory, Microsoft 365 y Google Workspace.
 					</p>
 				</div>
 
