@@ -10,6 +10,7 @@ import {
   siMongodb,
   siMysql,
   siNodedotjs,
+  siPostman,
   siDotnet,
   siPostgresql,
   siPython,
@@ -33,7 +34,7 @@ const content = reactive({
     },
     skills: {
       title: 'Habilidades',
-      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python',  'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
+      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python',  'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'Postman', 'Azure DevOps', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
     },
     experience: {
       title: 'Experiencia',
@@ -102,7 +103,7 @@ const content = reactive({
     },
     skills: {
       title: 'Skills',
-      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
+      list: ['JavaScript', 'TypeScript', 'Vue.js', 'React Native', 'Node.js', 'Python', 'SQL', 'MongoDB', 'HTML', 'CSS', 'Tailwind CSS', 'Git', 'Postman', 'Azure DevOps', 'PostgreSQL', 'C# / .NET', 'Java / Spring Boot']
     },
     experience: {
       title: 'Experience',
@@ -184,6 +185,11 @@ const submitForm = () => {
   window.location.href = mailto;
 };
 
+const azureDevOpsIcon = {
+  hex: '0078D4',
+  path: 'M2 5.5 8.5 2v3.5L5 7.3v9.4l3.5 1.8V22L2 18.5V5.5Zm8.5-1.8L22 8v8l-11.5 4.3v-4.1l6.7-2.5V10.3l-6.7-2.5V3.7Z',
+};
+
 const skillIcons = {
   JavaScript: siJavascript,
   TypeScript: siTypescript,
@@ -197,6 +203,8 @@ const skillIcons = {
   CSS: siCss,
   'Tailwind CSS': siTailwindcss,
   Git: siGit,
+  Postman: siPostman,
+  'Azure DevOps': azureDevOpsIcon,
   PostgreSQL: siPostgresql,
   'C# / .NET': siDotnet,
   'Java / Spring Boot': siSpringboot,

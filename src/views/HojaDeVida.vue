@@ -67,8 +67,10 @@
 						<span class="skill-tag">Active Directory</span>
 						<span class="skill-tag">Microsoft 365</span>
 						<span class="skill-tag">Azure</span>
+						<span class="skill-tag">Azure DevOps</span>
 						<span class="skill-tag">Google Workspace</span>
 						<span class="skill-tag">GLPI</span>
+						<span class="skill-tag">Postman</span>
 						<span class="skill-tag">C# / .NET</span>
 						<span class="skill-tag">PHP</span>
 						<span class="skill-tag">Python</span>
