@@ -20,6 +20,22 @@
 						<span v-if="isDark">☀️</span>
 						<span v-else>🌙</span>
 					</button>
+					<div class="profile-switcher" role="group" aria-label="Orientación de la hoja de vida">
+						<button
+							class="profile-switch-button"
+							:class="{ active: profileMode === 'development' }"
+							@click="profileMode = 'development'"
+						>
+							Desarrollo
+						</button>
+						<button
+							class="profile-switch-button"
+							:class="{ active: profileMode === 'support' }"
+							@click="profileMode = 'support'"
+						>
+							Soporte IT
+						</button>
+					</div>
 					<button class="print-btn" @click="printCV">Descargar PDF</button>
 				</div>
 			</nav>
@@ -38,7 +54,7 @@
 				</div>
 				<div class="sidebar-name">
 					<h1>Luis Enrique<br />Cuéllar Velásquez</h1>
-					<div class="title">Técnico en Sistemas & Desarrollador Full Stack</div>
+					<div class="title">{{ currentProfile.title }}</div>
 				</div>
 
 				<div class="sidebar-section">
@@ -64,27 +80,7 @@
 				<div class="sidebar-section">
 					<h3>Habilidades Técnicas</h3>
 					<div class="skill-tags">
-						<span class="skill-tag">Active Directory</span>
-						<span class="skill-tag">Microsoft 365</span>
-						<span class="skill-tag">Azure</span>
-						<span class="skill-tag">Azure DevOps</span>
-						<span class="skill-tag">Google Workspace</span>
-						<span class="skill-tag">GLPI</span>
-						<span class="skill-tag">Postman</span>
-						<span class="skill-tag">C# / .NET</span>
-						<span class="skill-tag">PHP</span>
-						<span class="skill-tag">Python</span>
-						<span class="skill-tag">Java</span>
-						<span class="skill-tag">HTML5 / CSS3</span>
-						<span class="skill-tag">Bootstrap</span>
-						<span class="skill-tag">Tailwind CSS</span>
-						<span class="skill-tag">MySQL</span>
-						<span class="skill-tag">PostgreSQL</span>
-						<span class="skill-tag">Git</span>
-						<span class="skill-tag">React</span>
-						<span class="skill-tag">APIs REST</span>
-						<span class="skill-tag">Spring Boot</span>
-						<span class="skill-tag">Hardware</span>
+						<span v-for="skill in currentProfile.skills" :key="skill" class="skill-tag">{{ skill }}</span>
 					</div>
 				</div>
 
@@ -141,16 +137,9 @@
 
 			<main class="main">
 				<div class="section">
-					<div class="section-title"><span class="icon">👤</span> Perfil Profesional</div>
+					<div class="section-title"><span class="icon">👤</span> {{ currentProfile.heading }}</div>
 					<p class="profile-text">
-						Tecnólogo en formación en Análisis y Desarrollo de Software, con gran interés en continuar creciendo en el
-						área de desarrollo web y adquirir experiencia y nuevos conocimientos en proyectos de software. Mi objetivo
-						es consolidar mi perfil como desarrollador Full Stack, aplicando conocimientos de frontend (HTML5, CSS3,
-						Bootstrap, Tailwind CSS, Vue.js y React), lenguajes de programación (PHP, Java con Spring Boot, C# con
-						ASP.NET y Python), APIs REST y bases de datos (MySQL y PostgreSQL). Complemento esta orientación con más
-						de 4 años de experiencia en soporte técnico especializado, remoto y presencial, diagnóstico de hardware y
-						software, resolución de incidencias e implementación de soluciones tecnológicas en entornos corporativos,
-						además de la administración de Active Directory, Microsoft 365 y Google Workspace.
+						{{ currentProfile.summary }}
 					</p>
 				</div>
 
@@ -170,9 +159,9 @@
 						</div>
 						<ul class="exp-desc">
 							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
-							<li>Implementación de APIs REST, desarrollo frontend y gestión de bases de datos</li>
+							<li>Implementación de APIs REST con .NET y Java con Spring Boot, desarrollo frontend y gestión de bases de datos</li>
 							<li>Análisis, depuración y solución de errores de software</li>
-							<li>Uso de Git para control de versiones y gestión de ramas</li>
+							<li>Uso de Git y Azure DevOps para control de versiones, gestión de ramas y seguimiento de cambios</li>
 							<li>Participación en análisis de requerimientos, pruebas, documentación y despliegue</li>
 						</ul>
 					</div>
@@ -324,6 +313,62 @@
 import { computed, ref } from 'vue';
 
 const profilePhoto = new URL('../assets/cv.jpg', import.meta.url).href;
+
+const profileMode = ref('development');
+
+const profiles = {
+	development: {
+		title: 'Desarrollador Full Stack Junior',
+		heading: 'Perfil Profesional - Desarrollo de Software',
+		summary:
+			'Tecnólogo en formación en Análisis y Desarrollo de Software, con experiencia práctica en desarrollo y mantenimiento de aplicaciones web Full Stack. Actualmente participo en proyectos con C#, .NET, APIs REST, tecnologías frontend y bases de datos, aplicando análisis de requerimientos, pruebas, documentación, depuración y control de versiones con Git y Azure DevOps. Cuento con conocimientos en HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React, PHP, Java con Spring Boot, Python, MySQL y PostgreSQL. Complemento este perfil con más de 4 años de experiencia en soporte técnico, lo que me permite comprender las necesidades operativas de los sistemas de información.',
+		skills: [
+			'C# / .NET',
+			'ASP.NET',
+			'APIs REST',
+			'HTML5 / CSS3',
+			'Bootstrap',
+			'Tailwind CSS',
+			'Vue.js',
+			'React',
+			'PHP',
+			'Java / Spring Boot',
+			'Python',
+			'MySQL',
+			'PostgreSQL',
+			'Git',
+			'Postman',
+			'Azure DevOps',
+		],
+	},
+	support: {
+		title: 'Soporte Técnico / IT',
+		heading: 'Perfil Profesional - Soporte Técnico / IT',
+		summary:
+			'Tecnólogo en formación en Análisis y Desarrollo de Software, con más de 4 años de experiencia en soporte técnico N1/N2, atención a usuarios y gestión de servicios tecnológicos en entornos corporativos. Experiencia en soporte remoto y presencial, diagnóstico y solución de incidentes de hardware y software, mantenimiento preventivo y correctivo, administración de usuarios y permisos, gestión de inventarios tecnológicos y seguimiento de requerimientos. Cuento con experiencia en Active Directory, Microsoft 365, Google Workspace, Azure, GLPI y sistemas operativos Windows. Mis conocimientos en C#, .NET, Java con Spring Boot, APIs REST y bases de datos aportan una perspectiva integral para diagnosticar sistemas y coordinar soluciones.',
+		skills: [
+			'Soporte N1 / N2',
+			'Troubleshooting',
+			'Hardware y periféricos',
+			'Windows',
+			'Active Directory',
+			'Microsoft 365',
+			'Google Workspace',
+			'Azure',
+			'GLPI',
+			'Inventario TI',
+			'Gestión de activos',
+			'Gestión de incidentes',
+			'Soporte remoto',
+			'Soporte presencial',
+			'C# / .NET',
+			'Java / Spring Boot',
+			'APIs REST',
+		],
+	},
+};
+
+const currentProfile = computed(() => profiles[profileMode.value]);
 
 const isDark = ref(
 	typeof document !== 'undefined' && document.documentElement.classList.contains('dark'),
@@ -612,6 +657,32 @@ const particlesOptions = computed(() => {
 .print-btn:hover {
 	transform: translateY(-1px);
 	box-shadow: 0 14px 30px rgba(37, 99, 235, 0.3);
+}
+
+.profile-switcher {
+	display: flex;
+	gap: 2px;
+	padding: 3px;
+	background: rgba(226, 232, 240, 0.8);
+	border: 1px solid rgba(148, 163, 184, 0.35);
+	border-radius: 999px;
+}
+
+.profile-switch-button {
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: var(--text-secondary);
+	font-size: 11px;
+	font-weight: 700;
+	padding: 7px 10px;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.profile-switch-button.active {
+	background: var(--primary);
+	color: #fff;
 }
 
 .page {
@@ -988,6 +1059,27 @@ const particlesOptions = computed(() => {
 	}
 }
 
+@media (max-width: 640px) {
+	.cv-nav {
+		padding: 10px 12px;
+	}
+
+	.profile-switcher {
+		order: 3;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.cv-nav > div:last-child {
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+
+	.profile-switch-button {
+		flex: 1;
+	}
+}
+
 @media print {
 	.cv-screen {
 		background: #fff !important;
@@ -1007,9 +1099,9 @@ const particlesOptions = computed(() => {
 		margin: 0;
 		box-shadow: none;
 		width: 210mm;
-		height: 594mm;
-		min-height: 594mm;
-		max-height: 594mm;
+		height: auto;
+		min-height: 0;
+		max-height: none;
 		max-width: 210mm;
 		page-break-inside: auto;
 		break-inside: auto;
@@ -1018,6 +1110,19 @@ const particlesOptions = computed(() => {
 
 	.cert-grid {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.sidebar-section,
+	.exp-item,
+	.edu-item,
+	.cert-item {
+		page-break-inside: avoid;
+		break-inside: avoid;
+	}
+
+	.section-title {
+		page-break-after: avoid;
+		break-after: avoid;
 	}
 
 	.main,
