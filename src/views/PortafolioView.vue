@@ -181,7 +181,7 @@ const formData = reactive({
 const submitForm = () => {
   const { name, email, subject, message } = formData;
   if (!name || !email || !message) return;
-  const mailto = `mailto:luisenrique7837@hotmail.com?subject=${encodeURIComponent(subject || 'Contacto')}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`)}`;
+  const mailto = `mailto:${content[currentLanguage.value].contactEmail}?subject=${encodeURIComponent(subject || 'Contacto')}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`)}`;
   window.location.href = mailto;
 };
 
@@ -636,7 +636,12 @@ const particlesOptions = computed(() => {
                   </div>
                   <div>
                     <h4 class="contact-info-label">{{ content[currentLanguage].contactFormEmail }}</h4>
-                    <p class="contact-info-value">{{ content[currentLanguage].contactEmail }}</p>
+                    <a
+                      class="contact-info-value hover:text-orange-500 transition-colors"
+                      :href="`mailto:${content[currentLanguage].contactEmail}`"
+                    >
+                      {{ content[currentLanguage].contactEmail }}
+                    </a>
                   </div>
                 </div>
 
