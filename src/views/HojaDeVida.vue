@@ -151,7 +151,6 @@
 							<div>
 								<div class="exp-role">
 									Aprendiz de Tecnología — Desarrollo Full Stack
-									<span class="highlight-badge">ACTUAL</span>
 								</div>
 								<div class="exp-company">Indigo Group</div>
 							</div>
