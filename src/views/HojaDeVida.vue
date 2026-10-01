@@ -158,8 +158,8 @@
 							<span class="exp-date">Abr 2026 — Oct 2026</span>
 						</div>
 						<ul class="exp-desc">
-							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
-							<li>Implementación de APIs REST con .NET y Java con Spring Boot, desarrollo frontend y gestión de bases de datos</li>
+							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET C#, Java Spring Boot</li>
+							<li>Implementación de APIs REST con .NET y Java con Spring Boot, desarrollo frontend y gestión de bases de datos postgreSQL</li>
 							<li>Análisis, depuración y solución de errores de software</li>
 							<li>Uso de Git y Azure DevOps para control de versiones, gestión de ramas y seguimiento de cambios</li>
 							<li>Participación en análisis de requerimientos, pruebas, documentación y despliegue</li>
@@ -321,7 +321,7 @@ const profiles = {
 		title: 'Desarrollador Full Stack Junior',
 		heading: 'Perfil Profesional - Desarrollo de Software',
 		summary:
-			'Tecnólogo en formación en Análisis y Desarrollo de Software, con experiencia práctica en desarrollo y mantenimiento de aplicaciones web Full Stack. Actualmente participo en proyectos con C#, .NET, APIs REST, tecnologías frontend y bases de datos, aplicando análisis de requerimientos, pruebas, documentación, depuración y control de versiones con Git y Azure DevOps. Cuento con conocimientos en HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React, PHP, Java con Spring Boot, Python, MySQL y PostgreSQL. Complemento este perfil con más de 4 años de experiencia en soporte técnico, lo que me permite comprender las necesidades operativas de los sistemas de información.',
+			'Tecnólogo en Análisis y Desarrollo de Software, con experiencia práctica en desarrollo y mantenimiento de aplicaciones web Full Stack. Actualmente participo en proyectos con C#, .NET, Java con Spring Boot, APIs REST, tecnologías frontend y bases de datos, aplicando análisis de requerimientos, pruebas, documentación, depuración y control de versiones con Git y Azure DevOps. Cuento con conocimientos en HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React, PHP, Java con Spring Boot, Python, MySQL y PostgreSQL. Complemento este perfil con más de 4 años de experiencia en soporte técnico, lo que me permite comprender las necesidades operativas de los sistemas de información.',
 		skills: [
 			'C# / .NET',
 			'ASP.NET',
@@ -345,9 +345,11 @@ const profiles = {
 		title: 'Soporte Técnico / IT',
 		heading: 'Perfil Profesional - Soporte Técnico / IT',
 		summary:
-			'Tecnólogo en formación en Análisis y Desarrollo de Software, con más de 4 años de experiencia en soporte técnico N1/N2, atención a usuarios y gestión de servicios tecnológicos en entornos corporativos. Experiencia en soporte remoto y presencial, diagnóstico y solución de incidentes de hardware y software, mantenimiento preventivo y correctivo, administración de usuarios y permisos, gestión de inventarios tecnológicos y seguimiento de requerimientos. Cuento con experiencia en Active Directory, Microsoft 365, Google Workspace, Azure, GLPI y sistemas operativos Windows. Mis conocimientos en C#, .NET, Java con Spring Boot, APIs REST y bases de datos aportan una perspectiva integral para diagnosticar sistemas y coordinar soluciones.',
+			'Tecnólogo en Análisis y Desarrollo de Software, con más de 4 años de experiencia en soporte técnico N1/N2 o helpdesk, análisis de requerimientos, atención a usuarios y gestión de servicios tecnológicos en entornos corporativos. Experiencia realizando soporte especializado en entornos remotos y presenciales, diagnóstico y solución de incidentes de hardware y software, mantenimiento preventivo y correctivo, administración de usuarios y permisos, gestión de inventarios tecnológicos y seguimiento de requerimientos. Cuento con experiencia en Active Directory, Microsoft 365, Google Workspace, Azure, GLPI y sistemas operativos Windows. Mis conocimientos en C#, .NET, Java con Spring Boot, APIs REST y bases de datos aportan una perspectiva integral para diagnosticar sistemas y coordinar soluciones.',
 		skills: [
 			'Soporte N1 / N2',
+			'Helpdesk',
+			'Analista de tecnología',
 			'Troubleshooting',
 			'Hardware y periféricos',
 			'Windows',
