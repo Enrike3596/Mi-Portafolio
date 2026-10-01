@@ -151,8 +151,8 @@
 							<div>
 								<div class="exp-role">
 									Aprendiz de Tecnología — Desarrollo Full Stack
+									<div class="exp-company">Indigo Group</div>
 								</div>
-								<div class="exp-company">Indigo Group</div>
 							</div>
 							<span class="exp-date">Abr 2026 — Oct 2026</span>
 						</div>
