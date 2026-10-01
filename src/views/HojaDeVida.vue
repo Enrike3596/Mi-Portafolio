@@ -166,7 +166,7 @@
 								</div>
 								<div class="exp-company">Indigo Group</div>
 							</div>
-							<span class="exp-date">Abr 2026 — Actualidad</span>
+							<span class="exp-date">Abr 2026 — Oct 2026</span>
 						</div>
 						<ul class="exp-desc">
 							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET y C#</li>
