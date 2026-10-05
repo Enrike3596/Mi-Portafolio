@@ -85,30 +85,6 @@
 				</div>
 
 				<div class="sidebar-section">
-					<h3>Idiomas</h3>
-					<div class="language-item">
-						<span>Español</span>
-						<div class="language-level">
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-							<div class="dot filled"></div>
-						</div>
-					</div>
-					<div class="language-item">
-						<span>Inglés</span>
-						<div class="language-level">
-							<div class="dot filled"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="sidebar-section">
 					<h3>Habilidades Personales</h3>
 					<ul class="soft-skill-list">
 						<li>Trabajo en equipo</li>
@@ -154,36 +130,37 @@
 									<div class="exp-company">Indigo Group</div>
 								</div>
 							</div>
-							<span class="exp-date">Abr 2026 — Oct 2026</span>
+							<span class="exp-date">Abril 2026 — Octubre 2026</span>
 						</div>
 						<ul class="exp-desc">
-							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con .NET C#, Java Spring Boot</li>
-							<li>Implementación de APIs REST con .NET y Java con Spring Boot, desarrollo frontend y gestión de bases de datos postgreSQL</li>
-							<li>Análisis, depuración y solución de errores de software</li>
+							<li>Desarrollo y mantenimiento de aplicaciones web Full Stack con C#/.NET y Java/Spring Boot</li>
+							<li>Implementación y consumo de APIs REST, desarrollo frontend e integración con bases de datos PostgreSQL</li>
+							<li>Documentación y validación de endpoints mediante Swagger/OpenAPI y herramientas de pruebas</li>
+							<li>Análisis de requerimientos, debugging, diagnóstico y corrección de defectos de software</li>
 							<li>Uso de Git y Azure DevOps para control de versiones, gestión de ramas y seguimiento de cambios</li>
-							<li>Participación en análisis de requerimientos, pruebas, documentación y despliegue</li>
+							<li>Participación en pruebas funcionales, documentación técnica y seguimiento del ciclo de desarrollo</li>
 						</ul>
 					</div>
 
 					<div class="exp-item">
 						<div class="exp-header">
 							<div>
-								<div class="exp-role">On Site Technical Support Analyst L2</div>
+								<div class="exp-role">Analista de Soporte Técnico en Sitio L2</div>
 								<div class="exp-company">Stefanini Colombia</div>
 							</div>
-							<span class="exp-date">Ago 2025 — Marzo 2026</span>
+							<span class="exp-date">Agosto 2025 — Marzo 2026</span>
 						</div>
 						<ul class="exp-desc">
 							<li>
-								Mantenimiento preventivo y correctivo de equipos informáticos con diagnóstico y optimización
-								de rendimiento
+								Diagnóstico, troubleshooting y mantenimiento preventivo y correctivo de equipos informáticos para
+								optimizar su rendimiento
 							</li>
-							<li>Administración de usuarios, grupos, permisos y políticas en Active Directory</li>
-							<li>Soporte y configuración de Microsoft 365 (Outlook, OneDrive, Teams, SharePoint)</li>
-							<li>Gestión y control de inventarios tecnológicos y activos de TI</li>
-							<li>Restablecimiento de contraseñas y recuperación de cuentas corporativas</li>
+							<li>Administración de usuarios, grupos, permisos y políticas de seguridad en Active Directory</li>
+							<li>Soporte, configuración y resolución de incidentes en Microsoft 365: Outlook, OneDrive, Teams y SharePoint</li>
+							<li>Gestión, actualización y control de inventario tecnológico y activos de TI</li>
+							<li>Restablecimiento de contraseñas, desbloqueo y recuperación de cuentas corporativas</li>
 							<li>
-								Atención, diagnóstico y resolución de incidentes garantizando continuidad operativa
+								Gestión, diagnóstico y resolución de incidentes técnicos, garantizando la continuidad operativa
 							</li>
 						</ul>
 					</div>
@@ -194,15 +171,16 @@
 								<div class="exp-role">Técnico en Soporte Tecnológico</div>
 								<div class="exp-company">MAB Ingeniería de Valor</div>
 							</div>
-							<span class="exp-date">Ene 2025 — Jul 2025</span>
+							<span class="exp-date">Enero 2025 — Julio 2025</span>
 						</div>
 						<ul class="exp-desc">
-							<li>Administración de accesos y cuentas en Google Workspace</li>
+							<li>Administración de usuarios, accesos y cuentas corporativas en Google Workspace</li>
 							<li>
-								Gestión, actualización y control de inventarios tecnológicos con coordinación de proveedores
+								Gestión, actualización y control del inventario tecnológico y activos de TI, coordinando actividades
+								con proveedores
 							</li>
-							<li>Administración de GLPI para registro, seguimiento y atención de incidentes</li>
-							<li>Ejecución de mantenimiento preventivo y correctivo de equipos informáticos</li>
+							<li>Administración de GLPI para registro, categorización, seguimiento y atención de incidentes y requerimientos</li>
+							<li>Diagnóstico y ejecución de mantenimiento preventivo y correctivo de equipos informáticos</li>
 						</ul>
 					</div>
 
@@ -212,17 +190,19 @@
 								<div class="exp-role">Asistente de Tecnología</div>
 								<div class="exp-company">Sonepar Colombia SAS</div>
 							</div>
-							<span class="exp-date">Sep 2024 — Ene 2025</span>
+							<span class="exp-date">Septiembre 2024 — Enero 2025</span>
 						</div>
 						<ul class="exp-desc">
 							<li>
-								Gestión del Directorio Activo: usuarios, grupos, permisos y políticas de seguridad
+								Administración de Active Directory: creación y gestión de usuarios, grupos, permisos y políticas
+								de seguridad
 							</li>
 							<li>
-								Soporte y configuración de Microsoft 365 y administración de la plataforma Azure
+								Soporte y configuración de Microsoft 365, junto con la administración de servicios de la plataforma
+								Azure
 							</li>
-							<li>Restablecimiento de contraseñas y recuperación de cuentas de usuarios</li>
-							<li>Mantenimiento preventivo y correctivo de equipos informáticos</li>
+							<li>Gestión del ciclo de vida de cuentas: restablecimiento de contraseñas y recuperación de usuarios</li>
+							<li>Diagnóstico y ejecución de mantenimiento preventivo y correctivo de equipos informáticos</li>
 						</ul>
 					</div>
 
@@ -232,25 +212,25 @@
 								<div class="exp-role">Auxiliar de Soporte Técnico</div>
 								<div class="exp-company">INTER RAPIDÍSIMO</div>
 							</div>
-							<span class="exp-date">Sep 2022 — Sep 2024</span>
+							<span class="exp-date">Septiembre 2022 — Septiembre 2024</span>
 						</div>
 						<ul class="exp-desc">
-							<li>Mantenimiento preventivo y correctivo de equipos e impresoras Kyocera</li>
-							<li>Instalación, configuración y formateo de sistemas operativos Windows</li>
-							<li>Coordinación con proveedores para gestión de inventarios</li>
-							<li>Gestión de herramientas corporativas: GLPI, Controller y Novasoft</li>
-							<li>Atención al cliente con enfoque en resolución rápida de problemas</li>
+							<li>Diagnóstico y mantenimiento preventivo y correctivo de equipos informáticos, impresoras Kyocera y periféricos</li>
+							<li>Instalación, configuración y reinstalación de sistemas operativos Windows</li>
+							<li>Coordinación con proveedores y actualización de registros de inventario tecnológico</li>
+							<li>Gestión de herramientas corporativas para soporte y operación tecnológica: GLPI, Controller y Novasoft</li>
+							<li>Atención a usuarios y resolución de incidentes con enfoque en continuidad operativa y servicio</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="section">
+				<div class="section academic-section">
 					<div class="section-title"><span class="icon">🎓</span> Formación Académica</div>
 
 					<div class="edu-item">
 						<div class="edu-degree">Tecnólogo en Análisis y Desarrollo de Software</div>
 						<div class="edu-school">Servicio Nacional de Aprendizaje (SENA)</div>
-						<div class="edu-date">Abr 2024 — En curso</div>
+						<div class="edu-date">Abril 2024 — Octubre 2026</div>
 					</div>
 
 					<div class="edu-item">
@@ -320,7 +300,7 @@ const profiles = {
 		title: 'Desarrollador Full Stack Junior',
 		heading: 'Perfil Profesional - Desarrollo de Software',
 		summary:
-			'Tecnólogo en Análisis y Desarrollo de Software, con experiencia práctica en desarrollo y mantenimiento de aplicaciones web Full Stack. Actualmente participo en proyectos con C#, .NET, Java con Spring Boot, APIs REST, tecnologías frontend y bases de datos, aplicando análisis de requerimientos, pruebas, documentación, depuración y control de versiones con Git y Azure DevOps. Cuento con conocimientos en HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React, PHP, Java con Spring Boot, Python, MySQL y PostgreSQL. Complemento este perfil con más de 4 años de experiencia en soporte técnico, lo que me permite comprender las necesidades operativas de los sistemas de información.',
+			'Tecnólogo en Análisis y Desarrollo de Software, con experiencia práctica en desarrollo y mantenimiento de aplicaciones web Full Stack. Experiencia en construcción y consumo de APIs REST con C#/.NET y Java/Spring Boot, desarrollo de interfaces frontend, integración entre capas y gestión de bases de datos MySQL y PostgreSQL. Participo en análisis de requerimientos, implementación de funcionalidades, pruebas, documentación técnica, debugging, corrección de defectos y control de versiones con Git y Azure DevOps. Cuento con conocimientos en HTML5, CSS3, Bootstrap, Tailwind CSS, Vue.js, React, PHP y Python. Complemento este perfil con más de 4 años de experiencia en soporte técnico, aportando una visión integral sobre la operación y continuidad de los sistemas de información.',
 		skills: [
 			'C# / .NET',
 			'ASP.NET',
@@ -1106,7 +1086,165 @@ const particlesOptions = computed(() => {
 		max-width: 210mm;
 		page-break-inside: auto;
 		break-inside: auto;
-		grid-template-columns: 35% 65%;
+		grid-template-columns: 1fr;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #111827;
+	}
+
+	.sidebar {
+		background: #fff;
+		color: #111827;
+		padding: 18mm 16mm 8mm;
+		gap: 12px;
+	}
+
+	.profile-photo,
+	.contact-item .icon,
+	.language-level {
+		display: none;
+	}
+
+	.sidebar-name {
+		text-align: left;
+		margin-bottom: 8px;
+	}
+
+	.sidebar-name h1 {
+		font-size: 24px;
+		color: #111827;
+	}
+
+	.sidebar-name .title {
+		font-size: 13px;
+		color: #1d4ed8;
+	}
+
+	.sidebar-section {
+		border-bottom: 1px solid #d1d5db;
+		padding-bottom: 10px;
+	}
+
+	.sidebar-section h3 {
+		font-size: 11px;
+		color: #1d4ed8;
+		margin-bottom: 7px;
+	}
+
+	.contact-item {
+		color: #374151;
+		margin-bottom: 3px;
+	}
+
+	.contact-item a {
+		color: #374151;
+	}
+
+	.skill-tags {
+		display: block;
+	}
+
+	.skill-tag {
+		background: transparent;
+		color: #111827;
+		border: 0;
+		padding: 0;
+		margin-right: 8px;
+	}
+
+	.skill-tag::after {
+		content: ' |';
+		color: #9ca3af;
+	}
+
+	.skill-tag:last-child::after {
+		content: '';
+	}
+
+	.soft-skill-list li,
+	.language-item {
+		color: #374151;
+		margin-bottom: 3px;
+	}
+
+	.main {
+		padding: 0 16mm 16mm;
+	}
+
+	.section-title {
+		font-size: 13px;
+		color: #1d4ed8;
+		border-bottom-color: #1d4ed8;
+		margin-bottom: 11px;
+	}
+
+	.section-title .icon {
+		display: none;
+	}
+
+	.profile-text,
+	.exp-desc li {
+		color: #374151;
+	}
+
+	.exp-item {
+		background: #fff;
+		border: 1px solid #d1d5db;
+		border-left: 3px solid #2563eb;
+		border-radius: 8px;
+		margin: 0 0 10px;
+		padding: 10px 14px;
+	}
+
+	.exp-item::before {
+		display: none;
+	}
+
+	.exp-item:last-child {
+		border-left-color: #2563eb;
+		padding-bottom: 10px;
+	}
+
+	.exp-desc {
+		margin-top: 8px;
+	}
+
+	.exp-desc li {
+		padding-left: 16px;
+	}
+
+	.exp-desc li::before {
+		content: '•';
+		color: #2563eb;
+	}
+
+	.exp-role,
+	.edu-degree,
+	.cert-item .cert-name {
+		color: #111827;
+	}
+
+	.exp-company {
+		color: #1d4ed8;
+	}
+
+	.exp-date,
+	.edu-date,
+	.cert-item .cert-org {
+		color: #4b5563;
+		background: transparent;
+		border: 0;
+		padding: 0;
+	}
+
+	.edu-item,
+	.cert-item {
+		background: #fff;
+		border-color: #d1d5db;
+	}
+
+	.academic-section {
+		page-break-before: always;
+		break-before: page;
 	}
 
 	.cert-grid {
