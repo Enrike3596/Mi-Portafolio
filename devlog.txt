@@ -1,0 +1,19 @@
+
+> portafolio-project@0.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  [32m[1mVITE[22m v8.0.16[39m  [2mready in [0m[1m824[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/Mi-Portafolio/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m9:26:09 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue, /src/assets/main.css[22m
+[2m9:26:13 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:16 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:20 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:24 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:33 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:39 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:26:48 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m

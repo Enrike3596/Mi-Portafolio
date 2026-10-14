@@ -361,7 +361,13 @@ function toggleTheme() {
 }
 
 function printCV() {
+	const profileName = profileMode.value === 'development' ? 'Desarrollo' : 'Soporte_IT';
+	const previousTitle = document.title;
+	document.title = `HojaDeVida_Luis_Cuellar_${profileName}`;
 	window.print();
+	setTimeout(() => {
+		document.title = previousTitle;
+	}, 500);
 }
 
 const particlesOptions = computed(() => {
@@ -1062,6 +1068,21 @@ const particlesOptions = computed(() => {
 }
 
 @media print {
+	* {
+		text-shadow: none !important;
+		box-shadow: none !important;
+	}
+
+	.page,
+	.page * {
+		font-family: Arial, Helvetica, sans-serif !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+		font-synthesis: none !important;
+		word-spacing: normal;
+	}
+
 	.cv-screen {
 		background: #fff !important;
 	}
@@ -1112,11 +1133,15 @@ const particlesOptions = computed(() => {
 	.sidebar-name h1 {
 		font-size: 24px;
 		color: #111827;
+		font-weight: 700;
+		letter-spacing: normal;
 	}
 
 	.sidebar-name .title {
 		font-size: 13px;
 		color: #1d4ed8;
+		font-weight: 600;
+		letter-spacing: 0.5px;
 	}
 
 	.sidebar-section {
@@ -1128,6 +1153,8 @@ const particlesOptions = computed(() => {
 		font-size: 11px;
 		color: #1d4ed8;
 		margin-bottom: 7px;
+		font-weight: 700;
+		letter-spacing: 0.8px;
 	}
 
 	.contact-item {
@@ -1141,6 +1168,8 @@ const particlesOptions = computed(() => {
 
 	.skill-tags {
 		display: block;
+		line-height: 1.9;
+		font-size: 11.5px;
 	}
 
 	.skill-tag {
@@ -1148,16 +1177,22 @@ const particlesOptions = computed(() => {
 		color: #111827;
 		border: 0;
 		padding: 0;
-		margin-right: 8px;
+		margin-right: 0;
+		font-weight: 400;
 	}
 
 	.skill-tag::after {
-		content: ' |';
+		content: '\00B7';
 		color: #9ca3af;
+		font-weight: 400;
+		font-size: 12px;
+		padding: 0 7px;
+		vertical-align: baseline;
 	}
 
 	.skill-tag:last-child::after {
 		content: '';
+		padding: 0;
 	}
 
 	.soft-skill-list li,
@@ -1175,6 +1210,8 @@ const particlesOptions = computed(() => {
 		color: #1d4ed8;
 		border-bottom-color: #1d4ed8;
 		margin-bottom: 11px;
+		letter-spacing: 0.8px;
+		font-weight: 700;
 	}
 
 	.section-title .icon {
@@ -1184,6 +1221,13 @@ const particlesOptions = computed(() => {
 	.profile-text,
 	.exp-desc li {
 		color: #374151;
+		font-weight: 400;
+		letter-spacing: normal;
+	}
+
+	.profile-text {
+		text-align: justify;
+		hyphens: auto;
 	}
 
 	.exp-item {
