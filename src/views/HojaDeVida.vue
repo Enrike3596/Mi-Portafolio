@@ -623,7 +623,7 @@ const particlesOptions = computed(() => {
 
 <style scoped>
 .cv-wrapper {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	background: transparent;
 	color: var(--text);
 	line-height: 1.6;
@@ -1076,16 +1076,23 @@ const particlesOptions = computed(() => {
 	* {
 		text-shadow: none !important;
 		box-shadow: none !important;
+		filter: none !important;
+		backdrop-filter: none !important;
 	}
 
+	/* Fuente de sistema en todo el PDF: sin webfont no hay
+	   rasterizado doble de tallos (l, I, t, d) en Chrome. */
 	.page,
 	.page * {
-		font-family: 'Inter', Arial, Helvetica, sans-serif !important;
-		-webkit-font-smoothing: auto !important;
-		-moz-osx-font-smoothing: auto !important;
+		font-family: Arial, Helvetica, sans-serif !important;
 		text-rendering: auto !important;
 		font-synthesis: none !important;
-		word-spacing: normal;
+		word-spacing: normal !important;
+		letter-spacing: normal !important;
+		opacity: 1 !important;
+		transform: none !important;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
 	}
 
 	.cv-screen {
@@ -1113,7 +1120,7 @@ const particlesOptions = computed(() => {
 		page-break-inside: auto;
 		break-inside: auto;
 		grid-template-columns: 1fr;
-		font-family: 'Inter', Arial, Helvetica, sans-serif;
+		font-family: Arial, Helvetica, sans-serif !important;
 		color: #111827;
 	}
 
@@ -1138,15 +1145,15 @@ const particlesOptions = computed(() => {
 	.sidebar-name h1 {
 		font-size: 24px;
 		color: #111827;
-		font-weight: 700;
-		letter-spacing: normal;
+		font-weight: 600 !important;
+		letter-spacing: normal !important;
 	}
 
 	.sidebar-name .title {
 		font-size: 13px;
 		color: #1d4ed8;
 		font-weight: 600;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.5px !important;
 	}
 
 	.sidebar-section {
@@ -1158,8 +1165,8 @@ const particlesOptions = computed(() => {
 		font-size: 11px;
 		color: #1d4ed8;
 		margin-bottom: 7px;
-		font-weight: 700;
-		letter-spacing: 0.8px;
+		font-weight: 600 !important;
+		letter-spacing: 0.8px !important;
 	}
 
 	.contact-item {
@@ -1215,24 +1222,28 @@ const particlesOptions = computed(() => {
 		color: #1d4ed8;
 		border-bottom-color: #1d4ed8;
 		margin-bottom: 11px;
-		letter-spacing: 0.8px;
-		font-weight: 700;
+		letter-spacing: 0.8px !important;
+		font-weight: 600 !important;
 	}
 
 	.section-title .icon {
 		display: none;
 	}
 
+	/* Texto de perfil: alineado a la izquierda (el justificado
+	   abre huecos irregulares y hace ver los tallos l/I/t
+	   más oscuros) y color más parejo para impresión. */
 	.profile-text,
 	.exp-desc li {
-		color: #374151;
-		font-weight: 400;
-		letter-spacing: normal;
+		color: #1f2937 !important;
+		font-weight: 400 !important;
 	}
 
 	.profile-text {
-		text-align: justify;
-		hyphens: auto;
+		text-align: left !important;
+		hyphens: none !important;
+		font-size: 12px !important;
+		line-height: 1.65 !important;
 	}
 
 	.exp-item {
@@ -1259,17 +1270,21 @@ const particlesOptions = computed(() => {
 
 	.exp-desc li {
 		padding-left: 16px;
+		font-size: 11.5px !important;
+		line-height: 1.55 !important;
 	}
 
 	.exp-desc li::before {
 		content: '•';
 		color: #2563eb;
+		font-weight: 400;
 	}
 
 	.exp-role,
 	.edu-degree,
 	.cert-item .cert-name {
 		color: #111827;
+		font-weight: 600 !important;
 	}
 
 	.exp-company {
@@ -1312,25 +1327,10 @@ const particlesOptions = computed(() => {
 		page-break-after: avoid;
 		break-after: avoid;
 	}
-
-	.main,
-	.sidebar,
-	.section,
-	.exp-item,
-	.edu-item,
-	.cert-item,
-	.contact-item,
-	.skill-tag,
-	.language-item {
-		-webkit-print-color-adjust: exact;
-		print-color-adjust: exact;
-	}
 }
 </style>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
-
 :root {
 	--primary: #0f172a;
 	--accent: #2563eb;
@@ -1359,6 +1359,15 @@ const particlesOptions = computed(() => {
 		print-color-adjust: exact;
 	}
 
+	/* El scoped no alcanza al canvas interno de partículas:
+	   se oculta aquí para que Chrome no rasterice la página
+	   como imagen y el texto salga nítido. */
+	.cv-nav,
+	.cv-particles,
+	#cv-particles,
+	#cv-particles canvas {
+		display: none !important;
+	}
 }
 
 @page {
