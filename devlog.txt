@@ -34,3 +34,17 @@ Port 5173 is in use, trying another one...
 [2m10:06:52 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
 [2m10:06:56 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
 [2m10:07:01 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=1&lang.css, /src/assets/main.css[22m
+[2m10:18:22 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:26 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:30 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:33 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:36 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:39 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:43 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:47 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:18:59 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:19:03 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:19:06 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:21:51 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:21:55 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m10:22:01 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m

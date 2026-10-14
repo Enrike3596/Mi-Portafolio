@@ -623,7 +623,7 @@ const particlesOptions = computed(() => {
 
 <style scoped>
 .cv-wrapper {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Calibri, 'Segoe UI', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	background: transparent;
 	color: var(--text);
 	line-height: 1.6;
@@ -1080,13 +1080,19 @@ const particlesOptions = computed(() => {
 		backdrop-filter: none !important;
 	}
 
-	/* Fuente de sistema en todo el PDF: sin webfont no hay
-	   rasterizado doble de tallos (l, I, t, d) en Chrome. */
+	/* Tipografía de impresión segura: Calibri/Segoe UI tienen
+	   hinting TrueType optimizado para PDF y la "l/L" no es una
+	   barra de 1px como en Arial: el tallo respira y no se
+	   redondea a píxel completo en escala de grises. Segoe UI
+	   además trae Semibold 600 real (Arial lo sintetizaba). */
 	.page,
 	.page * {
-		font-family: Arial, Helvetica, sans-serif !important;
+		font-family: Calibri, 'Segoe UI', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 		text-rendering: auto !important;
 		font-synthesis: none !important;
+		font-kerning: normal !important;
+		font-stretch: normal !important;
+		-webkit-text-stroke: 0 !important;
 		word-spacing: normal !important;
 		letter-spacing: normal !important;
 		opacity: 1 !important;
@@ -1120,7 +1126,7 @@ const particlesOptions = computed(() => {
 		page-break-inside: auto;
 		break-inside: auto;
 		grid-template-columns: 1fr;
-		font-family: Arial, Helvetica, sans-serif !important;
+		font-family: Calibri, 'Segoe UI', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
 		color: #111827;
 	}
 
@@ -1145,14 +1151,14 @@ const particlesOptions = computed(() => {
 	.sidebar-name h1 {
 		font-size: 24px;
 		color: #111827;
-		font-weight: 600 !important;
+		font-weight: 700 !important;
 		letter-spacing: normal !important;
 	}
 
 	.sidebar-name .title {
 		font-size: 13px;
 		color: #1d4ed8;
-		font-weight: 600;
+		font-weight: 700 !important;
 		letter-spacing: 0.5px !important;
 	}
 
@@ -1165,17 +1171,20 @@ const particlesOptions = computed(() => {
 		font-size: 11px;
 		color: #1d4ed8;
 		margin-bottom: 7px;
-		font-weight: 600 !important;
+		font-weight: 700 !important;
 		letter-spacing: 0.8px !important;
 	}
 
 	.contact-item {
 		color: #374151;
 		margin-bottom: 3px;
+		font-weight: 400 !important;
+		letter-spacing: normal !important;
 	}
 
 	.contact-item a {
 		color: #374151;
+		font-weight: 400 !important;
 	}
 
 	.skill-tags {
@@ -1190,13 +1199,14 @@ const particlesOptions = computed(() => {
 		border: 0;
 		padding: 0;
 		margin-right: 0;
-		font-weight: 400;
+		font-weight: 400 !important;
+		letter-spacing: normal !important;
 	}
 
 	.skill-tag::after {
 		content: '\00B7';
 		color: #9ca3af;
-		font-weight: 400;
+		font-weight: 400 !important;
 		font-size: 12px;
 		padding: 0 7px;
 		vertical-align: baseline;
@@ -1211,6 +1221,8 @@ const particlesOptions = computed(() => {
 	.language-item {
 		color: #374151;
 		margin-bottom: 3px;
+		font-weight: 400 !important;
+		letter-spacing: normal !important;
 	}
 
 	.main {
@@ -1223,7 +1235,7 @@ const particlesOptions = computed(() => {
 		border-bottom-color: #1d4ed8;
 		margin-bottom: 11px;
 		letter-spacing: 0.8px !important;
-		font-weight: 600 !important;
+		font-weight: 700 !important;
 	}
 
 	.section-title .icon {
@@ -1231,12 +1243,15 @@ const particlesOptions = computed(() => {
 	}
 
 	/* Texto de perfil: alineado a la izquierda (el justificado
-	   abre huecos irregulares y hace ver los tallos l/I/t
-	   más oscuros) y color más parejo para impresión. */
+	   abre huecos irregulares y hace ver los tallos l/L/I/t
+	   más oscuros) y color más parejo para impresión.
+	   Peso 400 real: evita faux-bold en tallos verticales. */
 	.profile-text,
 	.exp-desc li {
 		color: #1f2937 !important;
 		font-weight: 400 !important;
+		letter-spacing: normal !important;
+		word-spacing: normal !important;
 	}
 
 	.profile-text {
@@ -1277,18 +1292,27 @@ const particlesOptions = computed(() => {
 	.exp-desc li::before {
 		content: '•';
 		color: #2563eb;
-		font-weight: 400;
+		font-weight: 400 !important;
 	}
 
 	.exp-role,
 	.edu-degree,
 	.cert-item .cert-name {
 		color: #111827;
-		font-weight: 600 !important;
+		font-weight: 700 !important;
+		letter-spacing: normal !important;
 	}
 
 	.exp-company {
 		color: #1d4ed8;
+		font-weight: 700 !important;
+		letter-spacing: normal !important;
+	}
+
+	.edu-school {
+		color: #374151 !important;
+		font-weight: 400 !important;
+		letter-spacing: normal !important;
 	}
 
 	.exp-date,
@@ -1298,6 +1322,8 @@ const particlesOptions = computed(() => {
 		background: transparent;
 		border: 0;
 		padding: 0;
+		font-weight: 400 !important;
+		letter-spacing: normal !important;
 	}
 
 	.edu-item,
