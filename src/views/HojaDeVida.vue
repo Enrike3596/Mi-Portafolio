@@ -360,10 +360,15 @@ function toggleTheme() {
 	document.documentElement.classList.toggle('dark');
 }
 
-function printCV() {
+async function printCV() {
 	const profileName = profileMode.value === 'development' ? 'Desarrollo' : 'Soporte_IT';
 	const previousTitle = document.title;
 	document.title = `HojaDeVida_Luis_Cuellar_${profileName}`;
+
+	if (document.fonts?.ready) {
+		await document.fonts.ready;
+	}
+
 	window.print();
 	setTimeout(() => {
 		document.title = previousTitle;
@@ -1075,10 +1080,10 @@ const particlesOptions = computed(() => {
 
 	.page,
 	.page * {
-		font-family: Arial, Helvetica, sans-serif !important;
-		-webkit-font-smoothing: antialiased !important;
-		-moz-osx-font-smoothing: grayscale !important;
-		text-rendering: optimizeLegibility !important;
+		font-family: 'Inter', Arial, Helvetica, sans-serif !important;
+		-webkit-font-smoothing: auto !important;
+		-moz-osx-font-smoothing: auto !important;
+		text-rendering: auto !important;
 		font-synthesis: none !important;
 		word-spacing: normal;
 	}
@@ -1108,7 +1113,7 @@ const particlesOptions = computed(() => {
 		page-break-inside: auto;
 		break-inside: auto;
 		grid-template-columns: 1fr;
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Inter', Arial, Helvetica, sans-serif;
 		color: #111827;
 	}
 

@@ -17,3 +17,4 @@ Port 5173 is in use, trying another one...
 [2m9:26:33 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
 [2m9:26:39 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
 [2m9:26:48 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
+[2m9:44:53 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/HojaDeVida.vue, /src/views/HojaDeVida.vue?vue&type=style&index=0&scoped=ed0e39e1&lang.css, /src/assets/main.css[22m
